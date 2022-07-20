@@ -1,0 +1,120 @@
+/** soporte.css */
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
+
+
+body {
+    background-color: #fffbf7;
+}
+h1 {
+    color: #46484c;
+    text-align: center;
+}
+p {
+    color: #8b8b8bcc;
+    font-family: verdana;
+    font-size: 20px;
+}
+button {
+    color: #fff;
+    background-color: #025157;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
+.header {
+    display:inline-block;
+    margin: 40px 20px 0;
+    font-size: 0;
+    height: 45px;
+    font-family: sans-serif;
+}
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+
+}
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    width: 15%;
+}
+
+.navbar {
+  background-color: #fffbf7;
+  text-align:center;
+  color: #025157;
+  font-weight: 500;
+}
+
+.navbar-brand img {
+  width: 50%;
+}
+
+li {
+    display: inline;
+}
+
+.menu-item {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.actions {
+    text-align:right;
+    font-size: 14px;
+    font-weight: 600;
+}
+.actions > * {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.actions a {
+    color: #67b54b
+}
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
+  }
+
+.header-soporte {
+    text-align: justify;
+    width: 90%;
+    margin: 200px auto; /* Checar el tema de los margenes */
+    align-items: center;
+}
+
+.pie-pagina {
+    margin-top: 50px;
+    padding-bottom: 120px;
+    background-color: navy;
+}
+
+.pie-pagina h3{
+  color:chartreuse;
+  font-size: 1.5rem;
+  /*font-family: "Alegreya", serif;*/
+}
+
+.pie-pagina p{
+  color:#fffbf7;
+  font-size: 1rem;
+  /*font-family: "Alegreya", serif;*/
+}

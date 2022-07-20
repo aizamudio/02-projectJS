@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head> <!-- Información importante pero que no es visible-->
+      <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1.0,user-scalable=no"
+        />
+      <title>Coltech Technology Web Store</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" href="styles/">
+      
+    </head>
+    <body><!-- Esto es lo que verá el navegador web -->
+              <!-- Header con barra de navegación -->
+      <section class="fixed-header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/coltech-01.png" alt="Coltech"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        Introducción
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">¿Qué es invertir?</a></li>
+                        <li><a class="dropdown-item" href="#">¿Qué se necesita para invertir?</a></li>
+                        <li><a class="dropdown-item" href="#">Interés compuesto</a></li>
+                        <li><a class="dropdown-item" href="#">Establecer objetivos</a></li>
+                        <li><a class="dropdown-item" href="#">Estilo de inversionista</a></li>
+                        <li><a class="dropdown-item" href="#">Tipos de inversión</a></li>
+                        <li><a class="dropdown-item" href="#">Acciones</a></li>
+                        <li><a class="dropdown-item" href="#">Fondos de inversión</a></li>
+                        <li><a class="dropdown-item" href="#">ETFs</a></li>
+                        <li><a class="dropdown-item" href="#">Dollar-Cost Averaging</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        Análisis Técnico
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
+                        <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li> -->
+                        <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li> -->
+                      </ul>
+                </li>
+                <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        Análisis Fundamental
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
+                        <li><a class="dropdown-item" href="#">Análisis empresarial</a></li>
+                        <li><a class="dropdown-item" href="#">Valuación empresarial</a></li>
+                      </ul>
+                </li>
+                <!-- <li class="nav-item">
+                      <a class="nav-link" href="soporte.html">Soporte</a>
+                </li>  -->
+                <li class="nav-item">
+                      <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <form class="form-inline my-2 my-lg-0 actions justify-content-end">
+                  <input class="form-control me-2" type="search" placeholder="¿Qué producto buscas?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
+          <!-- Promocional con imagen y video -->
+      <section class="promo">
+        <article class="publish">
+          <h3>Mantente al día</h3>
+          <img src="images/man_working_on_two_notebooks_2.jpg" alt="imagen capterra"/>
+          <p>
+            Contamos con lo <strong> mas innovador en tecnología</strong> y nosotros lo ponemso a tu alcance.
+          </p>
+          <p> ¿Deseas conocer todas las novedades que tenemos?</p>
+          <form>
+            <div>
+              <input type="text" placeholder="Ingrese su email" />
+              <button class="email-boton">Enviar</button>
+            </div>
+          </form>
+        </article>
+        <article class="explanatory-video"><!-- Contenedor de video -->
+            <!-- Por si se quieren agregar videos mp4 o webm
+          <video controls
+            poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+            <source type="video/webm"
+              src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"/>
+            <source type="video/mp4"
+              src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"/>
+          </video> -->
+            <!-- Por si se quiere agregar videos de Youtube-->
+          <iframe
+            width="400" height="225" src="https://www.youtube.com/embed/A50f3O9eF9A" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <img
+            src="https://yt3.ggpht.com/KOsf0wOxVD5T11-JUFD2mUB_K576RLQiiiJOAQ1yucvP_o604Pnb7wT9-rlyXxQIOOv6MrnGhA=s88-c-k-c0x00ffffff-no-rj"
+            alt="HP Latam"
+          />
+        </article>
+      </section>
+            <!-- Carrusel con categorias -->
+      <section class="carrusel-categorias">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/productos/sillagamer-01.jpg" class="card-img-top" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="card-title">Sillas gaming</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Mas información</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/productos/multifuncional.jpg" class="d-block w-100" alt="2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Impresoras multifuncionales</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Mas información</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/productos/table-01.jpg" class="d-block w-100" alt="3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Tables</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Mas información</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/productos/laptop-01.jpg" class="d-block w-100" alt="4">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Laptops</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Mas información</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/productos/celular-01.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Teléfonos celulares</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Mas información</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/productos/smarttv-01.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Smart TV</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Mas información</a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+            <!-- Grid con cards de beneficios -->
+      <section class="features">
+        <article class="feature-card">
+          <div class="feature-content">
+            <figure>
+              <img src="images/beneficios/envio-domicilio.png" alt="Domicilio" />
+            </figure>
+            <h3>Envios a domicilio.</h3>
+            <p>Entrega inmediata y gGratis en artículos seleccionados</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-content">
+            <figure>
+              <img src="images/beneficios/entregas-mexico.png" alt="Entregas nacionales" />
+            </figure>
+              <h3>Entregas a todo México.</h3>
+              <p>Servicio de envío con cobertura nacional.</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-content">
+            <figure>
+              <img src="images/beneficios/soporte-linea.png" alt="Soporte en línea" />
+            </figure>
+            <h3>Soporte en línea 24/7</h3>
+            <p>Contamos con diversos canales de comunicación.</p>
+            <a href="">Contactenos</a>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-content">
+            <figure>
+              <img src="images/beneficios/devol-garant.png" alt="Garantía" />
+            </figure>
+            <h3>Devoluciones garantizadas</h3>
+            <p>Todos los productos cuentan con garantía por parte del fabricante.</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-content">
+            <figure>
+              <img src="images/beneficios/compra-segura.png" alt="Compra segura" />
+            </figure>
+            <h3>Compra de forma segura.</h3>
+            <p>Contamos con formas de pago 100% seguras.</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-content">
+            <figure>
+              <img src="images/beneficios/mejores marcas.jpg" alt="Las mejores marcas" />
+            </figure>
+            <h3>Las mejores marcas.</h3>
+            <p>Contamos en nuestro catálogo con las mejores marcas del mercado.</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-content">
+            <figure>
+              <img src="images/beneficios/best-seller.png" alt="Los más vendidos" />
+            </figure>
+            <h3>Productos mas vendidos.</h3>
+            <p>Sepa cuales son las marcas mas vendidas.</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-content">
+            <figure>
+              <img src="images/beneficios/mejores ofertas.jpg" alt="mas mejores ofertas" />
+            </figure>
+            <h3>Ofertas hot.</h3>
+            <p>Continuamente te traemos las mejores ofertas</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-content">
+            <figure>
+              <img src="images/beneficios/ultimo-llegar.png" alt="Novedades" />
+            </figure>
+            <h3>Lo que acaba de llegar.</h3>
+            <p>Le traemos los productos mas novedosos.</p>
+          </div>
+        </article>
+      </section>
+            <!-- Testimonios -->
+      <section class="carrusel-testimonios">
+        <div class="card-group">
+          <div class="card border rounded p-3">
+            <img src="images/testimonios/woman-ge2de9de23_640.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Los productos siempre llegan en tiempo y sin daño.</h5>
+              <p class="card-text">Algunas veces están un poco más baratos en otros sitios, sin embargo tardan más.</p>
+              <p class="card-text"><small class="text-muted">17/06/2022 a las 12:09</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/testimonios/man-gf6ec3dc62_640.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Servicio eficiente</h5>
+              <p class="card-text">Hasta ahora funciona correctamente, el precio me pareció muy barato, lo que me hizo desconfiar, pero hasta ahora ha funcionado conforme a lo descrito en las especificaciones.</p>
+              <p class="card-text"><small class="text-muted">06/06/2022 a las 17:59</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/testimonios/student-gdc949fad6_640.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Buen servicio y confiable</h5>
+              <p class="card-text">Hice un pedido, pagué y revisé y habia un error en una especificación, cancelé el pedido y me reembolsaron lo pagado sin demoras.
+                Posteriormente hice el pedido correcto y llegó muy rápido..</p>
+              <p class="card-text"><small class="text-muted">05/06/2022 a las 14:18</small></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="promo2"> <!-- Suscripción al bolentin de noticias -->
+        <article class="publish2">
+          <p>Suscríbete a nuestro boletín</p>
+          <form>
+            <div>
+              <input type="text" placeholder="Ingrese su email" />
+              <button class="email-boletin">Enviar</button>
+            </div>
+          </form>
+        </article>
+      </section>
+              <!-- Footer -->
+      <footer>
+        <section class="pie-pagina">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h3>Compra también por teléfono ¡Lamanos!</h3>
+                <p>55-xxxx-xxxx</p>
+              </div>
+              <div class="col">
+                <h3>Políticas de venta</h3>
+                <p>Políticas de venta</p>
+                <p>Aviso de privacidad</p>
+                <p>Términos y condiciones</p>
+                <p>Sobre nosotros</p>
+              </div>
+              <div class="col">
+                <h3>Servicios al cliente</h3>
+                <p>Política de devoluciones</p>
+                <p>Solicita tu factura</p>
+                <p>Facturación y formas de pago</p>
+                <p>PROFECO</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+      </script>
+    </body>
+</html>

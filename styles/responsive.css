@@ -1,0 +1,83 @@
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .actions,
+    .navbar {
+    text-align: center;
+    }
+         /** Media queries previos al banner **/
+    .promo {
+        margin-top: 150px;
+        flex-direction: column;
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    .explanatory-video > video {
+      width: 100%;
+    }
+
+    .publish {
+        margin-top: 10px;
+    }
+
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+      }
+
+    .publish > form {
+        flex-direction: column;
+      }
+
+      .publish > form > div {
+        height: 50px;
+        margin-top: 10px;
+      }
+
+      .publish > form > div > input {
+        width: 65%;
+      }
+
+        /** Estilos de portada principal y sección de publicidad */
+    .features {
+        grid-template: repeat(9, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+  .feature-image {
+        display: none;
+    }
+    /*
+    .success-stories {
+        flex-direction: column;
+        p
+    }
+    */
+}
+
+  /** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px and max-width: 767px) {}
+
+  /** dispositivos medianos (tablets) */
+@media (min-width: 768px and max-width: 991px) {
+    .actions,
+    .navbar {
+    text-align: center;
+  }
+
+  /*
+  .success-stories {
+    flex-direction: column;
+    padding: 5% 15px;
+  }
+  */
+}
+
+  /** dispositivos grandes (desktops) */
+@media (min-width: 992px and max-width: 1199px) {}
+
+  /** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}
