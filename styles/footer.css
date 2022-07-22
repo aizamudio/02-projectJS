@@ -1,0 +1,18 @@
+/* Footer general */
+.pie-pagina {
+    margin-top: 50px;
+    padding-bottom: 120px;
+    background-color: navy;
+}
+
+.pie-pagina h3{
+  color:chartreuse;
+  font-size: 1.5rem;
+  /*font-family: "Alegreya", serif;*/
+}
+
+.pie-pagina p{
+  color:#fffbf7;
+  font-size: 1rem;
+  /*font-family: "Alegreya", serif;*/
+}
