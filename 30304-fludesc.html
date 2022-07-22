@@ -5,8 +5,92 @@
     <title>Bursatech - Flujos descontados</title>
   </head>
   <body>
-    <!-- Header con barra de navegación -->
-    <!-- Esto es lo que se verá en el navegador web -->
-    <!-- Pie de página-->
+      <!-- Header con barra de navegación -->
+      <!-- Esto es lo que se verá en el navegador web -->
+    <h1>Análisis Fundamental</h1>
+    <h2>Flujos descontadoso</h2>
+    <p>
+      Ahora que tenemos la tasa, casi tenemos los elementos suficientes para poder determinar el valor de una empresa dentro de un 
+      modelo de flujos descontados.
+    </p>
+    <p>Si entendemos que el valor presente de un proyecto se puede expresar con la siguiente fórmula:</p>
+    <!-- Elaborar e insertar gráfico con la formula -->
+    <p>
+      Nos quedamos con una complicación, ¿hasta qué año vamos a considerar los flujos de una empresa si consideramos que seguirá 
+      operando por más tiempo?
+    </p>
+    <p>
+      En este sentido, con base en uso de las matemáticas, podemos simplificar el valor de años lejanos a través de una perpetuidad. 
+      De tal forma, nos veremos en la necesidad de proyectar solo unos cuantos años, previo a que se normalicen los flujos, para 
+      asumir un comportamiento inercial hacia el futuro lejano.
+    </p>
+    <p>Comúnmente este ejercicio implica proyectar unos 5 o 10 años de flujo libre de efectivo a la firma (FCFF). Este flujo libre de 
+      efectivo a la firma considera todo el efectivo que se generará y servirá para el pago del servicio de la deuda, así como el 
+      costo implícito de los accionistas.</p>
+    <p>
+      Recordemos que determinar los flujos que una empresa logrará generar en el futuro pareciera un acto de adivinación. ¿Cómo saber 
+      cuánto va a vender esta empresa en 10 años, un año, mañana? Es complicado, ahora incorporemos costos, gastos, intereses, 
+      impuestos y políticas de dividendos.
+    </p>
+    <!-- Elaborar tabla de cálculo del FCFF-->
+    <p>
+      Ahora bien, si consideramos que estos son los flujos que proyectamos para la empresa LMN, el siguiente paso es calcular el 
+      valor de la perpetuidad (donde no consideraremos cambio en capital de trabajo por asumir que tiende a cero), con la siguiente 
+      fórmula:
+    </p>
+    <p>Valor perpetuidad = Flujo / (WAAC - g)</p>
+    <p>
+      Donde la ‘g‘ suele ser un valor pequeño, que representa el crecimiento constante, puede ir ligado al crecimiento poblacional, 
+      por ejemplo.
+    </p>
+    <!-- Elaborar minitabla de cálculo del WAAC -->
+    <p>Con estos valores el valor de la perpetuidad da: 164,724.</p>
+    <p>Ahora hay que traer estos flujos a valor presente, utilizando la WACC y nuestra primera fórmula.</p>
+    <!-- Elaborar tabla de periodos a descontar-->
+    <p>
+      Al valor presente de estos flujos (que van para accionistas y fondeadores) les restamos el valor actual de la deuda, para dejar 
+      el valor del capital o equity como remanente.
+    </p>
+    <p>Si dividimos este valor entre el número de acciones en circulación obtendremos el valor teórico de la acción.</p>
+    <!-- Elaborar tabla del precio teórico-->
+    <p>
+      Como verás, si cambias el valor de la WACC podrás obtener valores muy diferentes, es por eso que comúnmente se hacen tablas de 
+      sensibilidad donde se mueven tanto el valor de la WACC como la g (o crecimiento a perpetuidad), y nos dan una idea de los 
+      límites de dicha valuación.
+    </p>
+    <!-- Elaborra tabla final del capitulo-->
+    <p>Aquí puedes descargar un excel con más detalles sobre los ejemplos que se llevaron en estas 4 lecciones. </p>
+    <!-- descargar archivo de Excel y subirlo a la carpeta del proyecto. Planear en un futuro elaborar una página con los cálculos
+    de ese archivo-->
+
+      <!-- Pie de página-->
+      <footer>
+        <section class="pie-pagina">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h3>Contáctenos también por teléfono ¡lLamanos!</h3>
+                <p>55-xxxx-xxxx</p>
+              </div>
+              <div class="col">
+                <h3>Políticas de venta</h3>
+                <p>Políticas de venta</p>
+                <p>Aviso de privacidad</p>
+                <p>Términos y condiciones</p>
+                <p>Sobre nosotros</p>
+              </div>
+              <div class="col">
+                <h3>Servicios al cliente</h3>
+                <p>Política de devoluciones</p>
+                <p>Solicita tu factura</p>
+                <p>Facturación y formas de pago</p>
+                <p>PROFECO</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

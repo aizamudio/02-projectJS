@@ -5,8 +5,99 @@
     <title>Bursatech - Tasa de descuento</title>
   </head>
   <body>
-    <!-- Header con barra de navegación -->
-    <!-- Esto es lo que se verá en el navegador web -->
-    <!-- Pie de página-->
+      <!-- Header con barra de navegación -->
+      <!-- Esto es lo que se verá en el navegador web -->
+    <h1>Análisis Fundamental</h1>
+    <h2>Tasa de descuento</h2>
+    <p>
+      Un elemento fundamental en la valuación de un activo es la tasa de descuento, con este nombre se conoce a la tasa que 
+      utilizaremos para traer a valor presente los flujos que en un futuro generará nuestra empresa sujeta a estudio.
+    </p>
+    <p>Dicha tasa, por definición, debe reflejar de manera apropiada, el riesgo que conlleva cierto emprendimiento.</p>
+    <p>
+      La sensibilidad que incorpora la tasa de riesgo al modelo de flujos descontados es alto, donde un punto porcentual puede ser 
+      la diferencia entre comprar o no comprar una acción.</p>
+    <p>Esta tasa se conoce como WACC o Weighted Average Cost of Capital, y debe reflejar la estructura de capital de la empresa.</p>
+    <p>WACC = %Deuda * Kd (1-tax%) + %Eq * Ke</p>
+    <p>•	Ponderadores: %Eq y %Deuda</p>
+    <p>•	Deuda = Deuda con costo (Bancaria, Publica con costo explícito)</p>
+    <p>•	Equity = Capital Contable</p>
+    <p>•	Kd = Costo de la deuda</p>
+    <p>•	Ke = Costo del Capital</p>
+    <h3>CAPM</h3>
+    <p>
+      El cálculo del costo de la deuda suele ser muy directo, es en la determinación del costo del capital (Ke) donde se ha ahondado 
+      y buscado una respuesta más elaborada.
+    </p>
+    <p>
+      Un modelo generalmente aceptado es implica el Capital Asset Pricing Model (CAPM), que establece la relación de retorno de todos 
+      los activos financieros ajustados en una curva.
+    </p>
+    <!-- Crear e insertar la gráfica -->
+    <p>Ri = rf + βi (rm rf)</p>
+    <p>Ri = rf + βi (Market risk premium)</p>
+    <p>ri es el retorno esperado de la empresa</p>
+    <p>ri es el retorno esperado de la empresa</p>
+    <p>Dejando como materia de cálculo el valor de la Beta.</p>
+    <h3>Beta</h3>
+    <p>
+      La beta dentro de este modelo representa la pendiente de la curva, o la parte de riesgo asociada específicamente a la empresa 
+      en cuestión.
+    </p>
+    <p>
+      Una manera de calcular la beta de una empresa, que cotiza en el mercado, es a través de una regresión. La beta nos dirá, hasta 
+      cierto punto, las diferencias en el comportamiento del precio de una acción respecto al mercado en general.
+    </p>
+    <p>
+      Una beta superior a uno se puede interpretar como un activo con un riesgo, o volatilidad, superior al mercado. Mientras que una 
+      beta inferior a uno describirá un activo con un menor grado de volatilidad percibida.
+    </p>
+    <p>
+      Los insumos para este cálculo son los cambios diarios en precio de la acción de la empresa, así como el cambio diario en el 
+      precio del índice o mercado donde se encuentren.
+    </p>
+    <p>En la siguiente tabla mostramos solo una parte de dicho cálculo:</p>
+    <!-- Elaborar tabla con los cálculos -->
+    <p>Con estos insumos, procedemos a calcular:</p>
+    <p>Beta = COV (%Acción, %Índice) / Var(%Índice)</p>
+    <p>Beta = COVAR(E3:E254,D3:D254)/Var(E:3:E254)</p>
+    <p>Beta = 0.75</p>
+    <p>
+      Con estos insumos, tenemos la información suficiente para calcular la WACC de una empresa, en caso de querer valuar una empresa 
+      no pública, atenderemos a calcular la beta de una comparable y utilizarla en suplencia. Cálculos adicionales pueden utilizarse 
+      para reflejar la correcta estructura de capital.
+    </p>
+    <h3>WACC</h3>
+    <!-- Elaborar tabla-->
+
+      <!-- Pie de página-->
+      <footer>
+        <section class="pie-pagina">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h3>Compra también por teléfono ¡Lamanos!</h3>
+                <p>55-xxxx-xxxx</p>
+              </div>
+              <div class="col">
+                <h3>Políticas de venta</h3>
+                <p>Políticas de venta</p>
+                <p>Aviso de privacidad</p>
+                <p>Términos y condiciones</p>
+                <p>Sobre nosotros</p>
+              </div>
+              <div class="col">
+                <h3>Servicios al cliente</h3>
+                <p>Política de devoluciones</p>
+                <p>Solicita tu factura</p>
+                <p>Facturación y formas de pago</p>
+                <p>PROFECO</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
