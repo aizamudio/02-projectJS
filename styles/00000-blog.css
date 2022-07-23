@@ -1,7 +1,6 @@
 /** blog.css */
 @import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
 
-
 body {
     background-color: #fffbf7;
 }
@@ -17,48 +16,6 @@ p {
 button {
     color: #fff;
     background-color: #025157;
-}
-
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fffbf7;
-}
-
-.header {
-    display:inline-block;
-    margin: 40px 20px 0;
-    font-size: 0;
-    height: 45px;
-    font-family: sans-serif;
-}
-.header > * {
-    display: inline-block;
-    font-size: 16px;
-    vertical-align: middle;
-    height: 100%;
-    line-height: 45px;
-
-}
-.logo {
-    width: 10%;
-}
-
-.logo img {
-    width: 15%;
-}
-
-.navbar {
-  background-color: #fffbf7;
-  text-align:center;
-  color: #025157;
-  font-weight: 500;
-}
-
-.navbar-brand img {
-  width: 50%;
 }
 
 li {
@@ -120,19 +77,3 @@ li {
     background-color: blue;
 }
 
-/*
-.pie-pagina {
-    margin-top: 50px;
-    padding-bottom: 120px;
-    background-color: navy;
-}
-
-.pie-pagina h3{
-  color:chartreuse;
-  font-size: 1.5rem;
-}
-
-.pie-pagina p{
-  color:#fffbf7;
-  font-size: 1rem;
-} */

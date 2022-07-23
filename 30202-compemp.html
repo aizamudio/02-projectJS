@@ -2,10 +2,91 @@
 <html>
     <head>
             <!-- Aquí va información importante pero no visible dentro del navegador -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>Bursatech - Comparación entre empresas</title>
+        <link rel="stylesheet" type="text/css" href="styles/navbar-footer.css" />
+        <link rel="stylesheet" type="text/css" href="styles/30202-compemp.css" />
     </head>
     <body>
             <!-- Header con barra de navegación -->
+        <section class="fixed-header">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/coltech-01.png" alt="Coltech"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="00000-blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                            Introducción
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">¿Qué es invertir?</a></li>
+                            <li><a class="dropdown-item" href="#">¿Qué se necesita para invertir?</a></li>
+                            <li><a class="dropdown-item" href="#">Interés compuesto</a></li>
+                            <li><a class="dropdown-item" href="#">Establecer objetivos</a></li>
+                            <li><a class="dropdown-item" href="#">Estilo de inversionista</a></li>
+                            <li><a class="dropdown-item" href="#">Tipos de inversión</a></li>
+                            <li><a class="dropdown-item" href="#">Acciones</a></li>
+                            <li><a class="dropdown-item" href="#">Fondos de inversión</a></li>
+                            <li><a class="dropdown-item" href="#">ETFs</a></li>
+                            <li><a class="dropdown-item" href="#">Dollar-Cost Averaging</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                            Análisis Técnico
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
+                            <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                            Análisis Fundamental
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
+                            <li><a class="dropdown-item" href="#">Análisis empresarial</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
+                            <li><a class="dropdown-item" href="#">Valuación empresarial</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <form class="form-inline my-2 my-lg-0 actions justify-content-end">
+                      <input class="form-control me-2" type="search" placeholder="¿Qué producto buscas?" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </section>
+
             <!-- Esto es lo que se verá en el navegador web -->
         <h1>Análisis Fundamental</h1>
         <h2>Comparación entre empresas</h2>
