@@ -13,11 +13,12 @@
   </head>
 
   <body>
+      <!-- Esto es lo que se verá en el navegador web -->
       <!-- Header con barra de navegación -->
       <section class="fixed-header">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
               <img src="images/coltech-01.png" alt="Coltech"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +27,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
                       <a class="nav-link" href="00000-blog.html">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                        Introducción
+                      <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sin página de introducción -->
+                      <a class="nav-link dropdown-toggle" href="10000-concepbas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        Empezar a invertir
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Introducción</a></li>
+                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">¿Qué es invertir?</a></li>
                         <li><a class="dropdown-item" href="#">¿Qué se necesita para invertir?</a></li>
                         <li><a class="dropdown-item" href="#">Interés compuesto</a></li>
@@ -46,33 +50,32 @@
                         <li><a class="dropdown-item" href="#">Fondos de inversión</a></li>
                         <li><a class="dropdown-item" href="#">ETFs</a></li>
                         <li><a class="dropdown-item" href="#">Dollar-Cost Averaging</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                        Análisis Técnico
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                        <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                    </ul>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                      Análisis Técnico
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Introducción</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
+                      <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
+                      <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                         Análisis Fundamental
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Análisis empresarial</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Valuación empresarial</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                    </ul>
+                        <li><a class="dropdown-item" href="#">Introducción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="30100-conbas.html">Conceptos básicos</a></li>
+                        <li><a class="dropdown-item" href="30200-anamuem.html">Análisis empresarial</a></li>
+                        <li><a class="dropdown-item" href="30300-valemp.html">Valuación empresarial</a></li>
+                      </ul>
                 </li>
                 <li class="nav-item">
                       <a class="nav-link" href="#">Contacto</a>
@@ -89,102 +92,147 @@
         </nav>
       </section>
 
-      <!-- Esto es lo que se verá en el navegador web -->
-    <h1>Análisis Fundamental</h1>
-    <h2>Valuación Relativa</h2>
-    <p>
-      Los múltiplos son razones financieras que relacionan, necesariamente, una medida de valor de mercado con una métrica financiera 
-      interna. Ahora bien, entraremos en materia del uso de dichos múltiplos para la determinación del precio teórico de una empresa.
-    </p>
-    <p>
-      La teoría apuntará a que el precio de mercado de los activos de cierta industria, en promedio, se acercan al valor intrínseco. 
-      De tal forma, si queremos determinar el precio de un activo por valuación relativa, deberemos encontrar una muestra de empresas 
-      con características similares, y determinar las variables que utilizaremos para dicha comparación.
-    </p>
-    <h3>Valuando con Precio a Ventas</h3>
-    <p>En primer lugar, determinaremos cómo se calcula el múltiplo precio a ventas, o Price to sales (P/S).</p>
-    <p>P/S = capitalización de mercado / Ventas 12M</p>
-    <p>PS = (# acciones) x (Precio) / Ventas 12M</p>
-    <p>
-      Por otro lado, obtendremos una muestra representativa de la industria donde opera la empresa que queremos valuar, en este 
-      ejemplo consideramos el mercado de retail en Estados Unidos.
-    </p>
-    <!-- desarrollar tabla con los multiplos actualizados -->
-    <p>Una vez identificada la muestra, calcularemos el múltiplo promedio, esto lo podemos hacer de un par de maneras:</p>
-    <p>•	Un promedio aritmético del múltiplo (sumar múltiplos y dividir entre observaciones)</p>
-    <p>•	Considerando el peso relativo de cada empresa en la muestra (mayor peso a las empresas más grande)</p>
-    <p>En este caso tomaremos el primer promedio, un múltiplo P/S de 1.03 veces.</p>
-    <p>
-      Ahora, consideraremos los datos de la empresa a valuar, asumamos que queremos valuar una empresa comercial llamada LMN, con 
-      ventas por 94,600 millones y 690 millones de acciones.</p>
-    <p>Primero despejaremos la fórmula, para encontrar el precio teórico:</p>
-    <p>PS = (# acciones) x (Precio) / Ventas 12M</p>
-    <p>Precio = (P/S) x Ventas 12M / #Acciones</p>
-    <p>Precio = (1.03) x (94,600M) / (690M)</p>
-    <p>Precio = 141.21</p>
-    <p>
-      En este escenario, asumimos que el valor teórico de la empresa LMN será de 141.21 por acción, considerando que el promedio de 
-      las empresas de retail en EUA cotizan a 1.03 veces sus ventas.
-    </p>
-    <p>
-      Es importante mencionar que este acercamiento es una aproximación, que estaría dejando de lado puntos como rentabilidad, 
-      crecimiento, apalancamiento, entre otros. De igual forma, existen factores cualitativos como en este caso pueden ser 
-      concentración geográfica, tamaño de las tiendas, ubicación, mercado objetivo, presencia en ecommerce, mismos que hacen 
-      complicado tener un comparable 100% similar.
-    </p>
-    <p>
-      Lo cierto es que, a través de éste, y otros acercamientos podemos empezar a encuadrar valores máximos, mínimos o limites que 
-      acotarán nuestro rango de valuación
-    </p>
-    <h3>Valuando con Precio a Ventas</h3> <!-- Investigar mas de este método-->
-    <p>
-      En su interpretación más simple, definimos al múltiplo Precio Utilidad como el resultado de dividir el valor de todas las acciones 
-      de una empresa, entre las utilidades generadas en un período de 12 meses.
-    </p>
-    <p>
-      Al tomar este múltiplo para nuestro análisis de valor relativo, estamos considerando un factor adicional, y medular, la 
-      rentabilidad.
-    </p>
-    <p>Determinaremos cómo se calcula el múltiplo precio a utilidades, o Price to earnings (P/E).</p>
-    <p>P/E = Capitalización de mercado / Utilidades 12M</p>
-    <p>P/E = (#acciones) x (precio) / Utilidades 12M</p>
-    <p>A continuación, obtendremos una muestra representativa de la industria donde opera la empresa que queremos valuar, en este 
-      caso continuaremos con el mercado de retail en Estados Unidos.
-    </p>
-    <!-- Elaborar tabla-->
-    <p>
-      De nuevo calcularemos el múltiplo promedio, en esta ocasión vemos como la diferencia entre el promedio ponderado y aritmético 
-      es menor. Aquí la diferencia es de menos de 2% contra una diferencia de casi 15% en el caso del múltiplo P/S.
-    </p>
-    <p>
-      En este caso tomaremos el primer promedio, un múltiplo P/E de 35.46 veces. Ahora, consideraremos los datos de la misma empresa 
-      a valuar, con utilidades de 3,800 y 690 millones de acciones. Continuamos despejando la fórmula, para encontrar el precio 
-      teórico:
-    </p>
-    <p>P/E = (#acciones) x (precio) / Utilidades 12M</p>
-    <p>Precio = (P/E) x Utilidades 12M / #Acciones</p>
-    <p>Precio = (35.46) x (3,800M) / 690M</p>
-    <p>Precio = 134,764M / 690M</p>
-    <p>Precio = 195.31</p>
-    <p>En este ejercicio podemos ver cómo con la misma muestra (retail Estados Unidos) y la misma empresa teórica, el valor obtenido 
-      puede diferir de 141.21 a 195.31.
-    </p>
-    <p>
-      Habrá quienes consideren que un promedio de los dos acercamientos estará más aproximado al verdadero valor. Pero en realidad, 
-      habrá que determinar qué otros factores intervienen en dichas diferencias.
-    </p>
-    <p>
-      De entrada, la rentabilidad de nuestra empresa LMN, medida como margen neto, (utilidades / ventas) es de 4.02%, en comparación 
-      al promedio de 3.54% de la muestra.
-    </p>
-    <p>
-      El proceso para obtener valuaciones relativas a través de diferentes múltiplos es similar, ya que se basan en:
-    </p>
-    <p>•	Definir el múltiplo a utilizar.</p>
-    <p>•	Encontrar muestras similares, mientras más específicas mejor.</p>
-    <p>•	Utilizar un múltiplo promedio de la muestra.</p>
-    <p>•	Despejar fórmula</p>
-    <p>•	Sustituir con información de empresa a evaluar</p>
+      <section>
+        <article>
+          <h1>Análisis Fundamental</h1>
+          <h2>Valuación Relativa</h2>
+          <p>
+            Los múltiplos son razones financieras que relacionan, necesariamente, una medida de valor de mercado con una métrica financiera 
+            interna. Ahora bien, entraremos en materia del uso de dichos múltiplos para la determinación del precio teórico de una empresa.
+          </p>
+          <p>
+            La teoría apuntará a que el precio de mercado de los activos de cierta industria, en promedio, se acercan al valor intrínseco. 
+            De tal forma, si queremos determinar el precio de un activo por valuación relativa, deberemos encontrar una muestra de empresas 
+            con características similares, y determinar las variables que utilizaremos para dicha comparación.
+          </p>
+        </article>
+
+        <article>
+          <h3>Valuando con Precio a Ventas</h3>
+          <p>En primer lugar, determinaremos cómo se calcula el múltiplo precio a ventas, o Price to sales (P/S).</p>
+          <p>P/S = capitalización de mercado / Ventas 12M</p>
+          <p>PS = (# acciones) x (Precio) / Ventas 12M</p>
+          <p>
+            Por otro lado, obtendremos una muestra representativa de la industria donde opera la empresa que queremos valuar, en este 
+            ejemplo consideramos el mercado de retail en Estados Unidos.
+          </p>
+        </article>
+      </section>
+      <section class="features-valpv">
+        <article><p></p></article><article><p>Precio</p></article><article><p># Acciones (millones)</p></article><article><p>Market Cap (Millones) </p></article>
+            <article><p>Ventas 12M (millones)</p></article><article><p>P/S</p></article>
+        <article><p>Walmart</p></article><article><p>148.80</p></article><article><p>2,787</p></article>
+            <article><p>414,692</p></article><article><p>566,140</p></article><article><p>0.73</p></article>
+        <article><p>Target</p></article><article><p>258.80</p></article><article><p>489</p></article>
+            <article><p>126,431</p></article><article><p>100,330</p></article><article><p>1.26</p></article>
+        <article><p>Costco</p></article><article><p>490.53</p></article><article><p>442</p></article>
+            <article><p>216,750</p></article><article><p>195,930</p></article><article><p>1.11</p></article>
+        <article><p></p></article><article><p></p></article><article><p>Promedio aritmético</p></article>
+            <article><p></p></article><article><p></p></article><article><p>1.03</p></article>
+        <article><p></p></article><article><p></p></article><article><p>Promedio ponderado</p></article>
+          <article><p>757,873</p></article><article><p>862,400</p></article><article><p>0.88</p></article>
+      </section>
+
+      <section>
+        <article>
+          <p>Una vez identificada la muestra, calcularemos el múltiplo promedio, esto lo podemos hacer de un par de maneras:</p>
+          <p>•	Un promedio aritmético del múltiplo (sumar múltiplos y dividir entre observaciones)</p>
+          <p>•	Considerando el peso relativo de cada empresa en la muestra (mayor peso a las empresas más grande)</p>
+          <p>En este caso tomaremos el primer promedio, un múltiplo P/S de 1.03 veces.</p>
+          <p>
+            Ahora, consideraremos los datos de la empresa a valuar, asumamos que queremos valuar una empresa comercial llamada LMN, con 
+            ventas por 94,600 millones y 690 millones de acciones.</p>
+          <p>Primero despejaremos la fórmula, para encontrar el precio teórico:</p>
+          <p>PS = (# acciones) x (Precio) / Ventas 12M</p>
+          <p>Precio = (P/S) x Ventas 12M / #Acciones</p>
+          <p>Precio = (1.03) x (94,600M) / (690M)</p>
+          <p>Precio = 141.21</p>
+          <p>
+            En este escenario, asumimos que el valor teórico de la empresa LMN será de 141.21 por acción, considerando que el promedio de 
+            las empresas de retail en EUA cotizan a 1.03 veces sus ventas.
+          </p>
+          <p>
+            Es importante mencionar que este acercamiento es una aproximación, que estaría dejando de lado puntos como rentabilidad, 
+            crecimiento, apalancamiento, entre otros. De igual forma, existen factores cualitativos como en este caso pueden ser 
+            concentración geográfica, tamaño de las tiendas, ubicación, mercado objetivo, presencia en ecommerce, mismos que hacen 
+            complicado tener un comparable 100% similar.
+          </p>
+          <p>
+            Lo cierto es que, a través de éste, y otros acercamientos podemos empezar a encuadrar valores máximos, mínimos o limites que 
+            acotarán nuestro rango de valuación
+          </p>
+        </article>
+
+        <article>
+          <h3>Valuando con Precio a Ventas</h3> <!-- Investigar mas de este método-->
+          <p>
+            En su interpretación más simple, definimos al múltiplo Precio Utilidad como el resultado de dividir el valor de todas las acciones 
+            de una empresa, entre las utilidades generadas en un período de 12 meses.
+          </p>
+          <p>
+            Al tomar este múltiplo para nuestro análisis de valor relativo, estamos considerando un factor adicional, y medular, la 
+            rentabilidad.
+          </p>
+          <p>Determinaremos cómo se calcula el múltiplo precio a utilidades, o Price to earnings (P/E).</p>
+          <p>P/E = Capitalización de mercado / Utilidades 12M</p>
+          <p>P/E = (#acciones) x (precio) / Utilidades 12M</p>
+          <p>A continuación, obtendremos una muestra representativa de la industria donde opera la empresa que queremos valuar, en este 
+            caso continuaremos con el mercado de retail en Estados Unidos.
+          </p>
+        </article>
+      </section>
+      <section class="features-valpu">
+        <article><p></p></article><article><p>Precio</p></article><article><p># Acciones (millones)</p></article><article><p>Market Cap (Millones) </p></article>
+            <article><p>Utilidades 12M (millones)</p></article><article><p>P/E</p></article>
+        <article><p>Walmart</p></article><article><p>148.80</p></article><article><p>2,787</p></article>
+            <article><p>414,692</p></article><article><p>10,500</p></article><article><p>21.26</p></article>
+        <article><p>Target</p></article><article><p>258.80</p></article><article><p>489</p></article>
+            <article><p>126,431</p></article><article><p>6,310</p></article><article><p>20.04</p></article>
+        <article><p>Costco</p></article><article><p>490.53</p></article><article><p>442</p></article>
+            <article><p>216,750</p></article><article><p>5,010</p></article><article><p>43.26</p></article>
+        <article><p></p></article><article><p></p></article><article><p>Promedio aritmético</p></article>
+            <article><p></p></article><article><p></p></article><article><p>34.85</p></article>
+        <article><p></p></article><article><p></p></article><article><p>Promedio ponderado</p></article>
+            <article><p>757,873</p></article><article><p>21,370</p></article><article><p>35.46</p></article>
+      </section>
+
+      <section>
+        <article>
+          <p>
+            De nuevo calcularemos el múltiplo promedio, en esta ocasión vemos como la diferencia entre el promedio ponderado y aritmético 
+            es menor. Aquí la diferencia es de menos de 2% contra una diferencia de casi 15% en el caso del múltiplo P/S.
+          </p>
+          <p>
+            En este caso tomaremos el primer promedio, un múltiplo P/E de 35.46 veces. Ahora, consideraremos los datos de la misma empresa 
+            a valuar, con utilidades de 3,800 y 690 millones de acciones. Continuamos despejando la fórmula, para encontrar el precio 
+            teórico:
+          </p>
+          <p>P/E = (#acciones) x (precio) / Utilidades 12M</p>
+          <p>Precio = (P/E) x Utilidades 12M / #Acciones</p>
+          <p>Precio = (35.46) x (3,800M) / 690M</p>
+          <p>Precio = 134,764M / 690M</p>
+          <p>Precio = 195.31</p>
+          <p>En este ejercicio podemos ver cómo con la misma muestra (retail Estados Unidos) y la misma empresa teórica, el valor obtenido 
+            puede diferir de 141.21 a 195.31.
+          </p>
+          <p>
+            Habrá quienes consideren que un promedio de los dos acercamientos estará más aproximado al verdadero valor. Pero en realidad, 
+            habrá que determinar qué otros factores intervienen en dichas diferencias.
+          </p>
+          <p>
+            De entrada, la rentabilidad de nuestra empresa LMN, medida como margen neto, (utilidades / ventas) es de 4.02%, en comparación 
+            al promedio de 3.54% de la muestra.
+          </p>
+          <p>
+            El proceso para obtener valuaciones relativas a través de diferentes múltiplos es similar, ya que se basan en:
+          </p>
+          <p>•	Definir el múltiplo a utilizar.</p>
+          <p>•	Encontrar muestras similares, mientras más específicas mejor.</p>
+          <p>•	Utilizar un múltiplo promedio de la muestra.</p>
+          <p>•	Despejar fórmula</p>
+          <p>•	Sustituir con información de empresa a evaluar</p>
+        </article>
+      </section>
 
       <!-- Pie de página-->
       <footer>

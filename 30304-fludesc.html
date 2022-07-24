@@ -12,11 +12,12 @@
     <script type="text/javascript" src="scripts/finan-funct.js"></script>
   </head>
   <body>
+      <!-- Esto es lo que se verá en el navegador web -->
       <!-- Header con barra de navegación -->
       <section class="fixed-header">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
               <img src="images/coltech-01.png" alt="Coltech"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +26,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
                       <a class="nav-link" href="00000-blog.html">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                        Introducción
+                      <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sin página de introducción -->
+                      <a class="nav-link dropdown-toggle" href="10000-concepbas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        Empezar a invertir
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Introducción</a></li>
+                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">¿Qué es invertir?</a></li>
                         <li><a class="dropdown-item" href="#">¿Qué se necesita para invertir?</a></li>
                         <li><a class="dropdown-item" href="#">Interés compuesto</a></li>
@@ -45,33 +49,32 @@
                         <li><a class="dropdown-item" href="#">Fondos de inversión</a></li>
                         <li><a class="dropdown-item" href="#">ETFs</a></li>
                         <li><a class="dropdown-item" href="#">Dollar-Cost Averaging</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                        Análisis Técnico
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                        <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                    </ul>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                      Análisis Técnico
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Introducción</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
+                      <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
+                      <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                         Análisis Fundamental
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Análisis empresarial</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Valuación empresarial</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                    </ul>
+                        <li><a class="dropdown-item" href="#">Introducción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="30100-conbas.html">Conceptos básicos</a></li>
+                        <li><a class="dropdown-item" href="30200-anamuem.html">Análisis empresarial</a></li>
+                        <li><a class="dropdown-item" href="30300-valemp.html">Valuación empresarial</a></li>
+                      </ul>
                 </li>
                 <li class="nav-item">
                       <a class="nav-link" href="#">Contacto</a>
@@ -88,62 +91,86 @@
         </nav>
       </section>
 
-      <!-- Esto es lo que se verá en el navegador web -->
-    <h1>Análisis Fundamental</h1>
-    <h2>Flujos descontadoso</h2>
-    <p>
-      Ahora que tenemos la tasa, casi tenemos los elementos suficientes para poder determinar el valor de una empresa dentro de un 
-      modelo de flujos descontados.
-    </p>
-    <p>Si entendemos que el valor presente de un proyecto se puede expresar con la siguiente fórmula:</p>
-    <!-- Elaborar e insertar gráfico con la formula -->
-    <p>
-      Nos quedamos con una complicación, ¿hasta qué año vamos a considerar los flujos de una empresa si consideramos que seguirá 
-      operando por más tiempo?
-    </p>
-    <p>
-      En este sentido, con base en uso de las matemáticas, podemos simplificar el valor de años lejanos a través de una perpetuidad. 
-      De tal forma, nos veremos en la necesidad de proyectar solo unos cuantos años, previo a que se normalicen los flujos, para 
-      asumir un comportamiento inercial hacia el futuro lejano.
-    </p>
-    <p>Comúnmente este ejercicio implica proyectar unos 5 o 10 años de flujo libre de efectivo a la firma (FCFF). Este flujo libre de 
-      efectivo a la firma considera todo el efectivo que se generará y servirá para el pago del servicio de la deuda, así como el 
-      costo implícito de los accionistas.</p>
-    <p>
-      Recordemos que determinar los flujos que una empresa logrará generar en el futuro pareciera un acto de adivinación. ¿Cómo saber 
-      cuánto va a vender esta empresa en 10 años, un año, mañana? Es complicado, ahora incorporemos costos, gastos, intereses, 
-      impuestos y políticas de dividendos.
-    </p>
-    <!-- Elaborar tabla de cálculo del FCFF-->
-    <p>
-      Ahora bien, si consideramos que estos son los flujos que proyectamos para la empresa LMN, el siguiente paso es calcular el 
-      valor de la perpetuidad (donde no consideraremos cambio en capital de trabajo por asumir que tiende a cero), con la siguiente 
-      fórmula:
-    </p>
-    <p>Valor perpetuidad = Flujo / (WAAC - g)</p>
-    <p>
-      Donde la ‘g‘ suele ser un valor pequeño, que representa el crecimiento constante, puede ir ligado al crecimiento poblacional, 
-      por ejemplo.
-    </p>
-    <!-- Elaborar minitabla de cálculo del WAAC -->
-    <p>Con estos valores el valor de la perpetuidad da: 164,724.</p>
-    <p>Ahora hay que traer estos flujos a valor presente, utilizando la WACC y nuestra primera fórmula.</p>
-    <!-- Elaborar tabla de periodos a descontar-->
-    <p>
-      Al valor presente de estos flujos (que van para accionistas y fondeadores) les restamos el valor actual de la deuda, para dejar 
-      el valor del capital o equity como remanente.
-    </p>
-    <p>Si dividimos este valor entre el número de acciones en circulación obtendremos el valor teórico de la acción.</p>
-    <!-- Elaborar tabla del precio teórico-->
-    <p>
-      Como verás, si cambias el valor de la WACC podrás obtener valores muy diferentes, es por eso que comúnmente se hacen tablas de 
-      sensibilidad donde se mueven tanto el valor de la WACC como la g (o crecimiento a perpetuidad), y nos dan una idea de los 
-      límites de dicha valuación.
-    </p>
-    <!-- Elaborra tabla final del capitulo-->
-    <p>Aquí puedes descargar un excel con más detalles sobre los ejemplos que se llevaron en estas 4 lecciones. </p>
-    <!-- descargar archivo de Excel y subirlo a la carpeta del proyecto. Planear en un futuro elaborar una página con los cálculos
-    de ese archivo-->
+      <section>
+        <article>
+          <h1>Análisis Fundamental</h1>
+          <h2>Flujos descontadoso</h2>
+          <p>
+            Ahora que tenemos la tasa, casi tenemos los elementos suficientes para poder determinar el valor de una empresa dentro de un 
+            modelo de flujos descontados.
+          </p>
+          <p>Si entendemos que el valor presente de un proyecto se puede expresar con la siguiente fórmula:</p>
+          <!-- Elaborar e insertar gráfico con la formula -->
+          <p>
+            Nos quedamos con una complicación, ¿hasta qué año vamos a considerar los flujos de una empresa si consideramos que seguirá 
+            operando por más tiempo?
+          </p>
+          <p>
+            En este sentido, con base en uso de las matemáticas, podemos simplificar el valor de años lejanos a través de una perpetuidad. 
+            De tal forma, nos veremos en la necesidad de proyectar solo unos cuantos años, previo a que se normalicen los flujos, para 
+            asumir un comportamiento inercial hacia el futuro lejano.
+          </p>
+          <p>Comúnmente este ejercicio implica proyectar unos 5 o 10 años de flujo libre de efectivo a la firma (FCFF). Este flujo libre de 
+            efectivo a la firma considera todo el efectivo que se generará y servirá para el pago del servicio de la deuda, así como el 
+            costo implícito de los accionistas.</p>
+          <p>
+            Recordemos que determinar los flujos que una empresa logrará generar en el futuro pareciera un acto de adivinación. ¿Cómo saber 
+            cuánto va a vender esta empresa en 10 años, un año, mañana? Es complicado, ahora incorporemos costos, gastos, intereses, 
+            impuestos y políticas de dividendos.
+          </p>
+          <!-- Elaborar tabla de cálculo del FCFF-->
+          <p>
+            Ahora bien, si consideramos que estos son los flujos que proyectamos para la empresa LMN, el siguiente paso es calcular el 
+            valor de la perpetuidad (donde no consideraremos cambio en capital de trabajo por asumir que tiende a cero), con la siguiente 
+            fórmula:
+          </p>
+          <p>Valor perpetuidad = Flujo / (WAAC - g)</p>
+          <p>
+            Donde la ‘g‘ suele ser un valor pequeño, que representa el crecimiento constante, puede ir ligado al crecimiento poblacional, 
+            por ejemplo.
+          </p>
+          <!-- Elaborar minitabla de cálculo del WAAC -->
+          <p>Con estos valores el valor de la perpetuidad da: 164,724.</p>
+          <p>Ahora hay que traer estos flujos a valor presente, utilizando la WACC y nuestra primera fórmula.</p>
+          <!-- Elaborar tabla de periodos a descontar-->
+          <p>
+            Al valor presente de estos flujos (que van para accionistas y fondeadores) les restamos el valor actual de la deuda, para dejar 
+            el valor del capital o equity como remanente.
+          </p>
+          <p>Si dividimos este valor entre el número de acciones en circulación obtendremos el valor teórico de la acción.</p>
+          <!-- Elaborar tabla del precio teórico-->
+          <p>
+            Como verás, si cambias el valor de la WACC podrás obtener valores muy diferentes, es por eso que comúnmente se hacen tablas de 
+            sensibilidad donde se mueven tanto el valor de la WACC como la g (o crecimiento a perpetuidad), y nos dan una idea de los 
+            límites de dicha valuación.
+          </p>
+          <!-- Elaborra tabla final del capitulo-->
+          <p>Aquí puedes descargar un excel con más detalles sobre los ejemplos que se llevaron en estas 4 lecciones. </p>
+          <!-- descargar archivo de Excel y subirlo a la carpeta del proyecto. Planear en un futuro elaborar una página con los cálculos
+          de ese archivo-->
+        </article>
+
+        <article>
+          <h2>Conclusión</h2>
+          <p>
+            El análisis fundamental es una herramienta poderosa para entender el fondo de los que estamos comprando al invertir. Y en esta 
+            ocasión fuimos un paso más adelante para contextualizar estrategias de inversión sectoriales.
+          </p>
+          <p>
+            Una vez que aprendimos a utilizar los estados financieros y las razones financieras, vimos que existen parámetros muy específicos 
+            de determinadas industrias, con adaptaciones muy particulares.
+          </p>
+          <p>
+            En nuestro arsenal de herramientas para encontrar valor al momento de invertir, conocimos los múltiplos y su utilidad, ya que 
+            podemos identificar grandes empresas, pero el precio que estemos dispuestos a pagar será una variable importante en nuestro 
+            rendimiento.
+          </p>
+          <p>
+            Por último, logramos ligar la idea de riesgo y rendimiento en el contexto de la valuación, cual es la relación que existe entre 
+            estos dos para determinar el valor de un activo y tomar decisiones educadas al momento de invertir.
+          </p>
+        </article>
+      </section>
 
       <!-- Pie de página-->
       <footer>

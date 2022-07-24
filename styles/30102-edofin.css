@@ -222,3 +222,21 @@ li {
 .email-boletin:hover {
   background-color: blue;
 }
+
+.features-cuentas {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.features-EstRes {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.features-flow {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
+}

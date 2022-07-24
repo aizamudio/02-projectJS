@@ -12,11 +12,12 @@
     <script type="text/javascript" src="scripts/finan-funct.js"></script>
   </head>
   <body>
+      <!-- Esto es lo que se verá en el navegador web -->
       <!-- Header con barra de navegación -->
       <section class="fixed-header">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
               <img src="images/coltech-01.png" alt="Coltech"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +26,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
                       <a class="nav-link" href="00000-blog.html">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                        Introducción
+                      <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sin página de introducción -->
+                      <a class="nav-link dropdown-toggle" href="10000-concepbas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        Empezar a invertir
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Introducción</a></li>
+                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">¿Qué es invertir?</a></li>
                         <li><a class="dropdown-item" href="#">¿Qué se necesita para invertir?</a></li>
                         <li><a class="dropdown-item" href="#">Interés compuesto</a></li>
@@ -45,33 +49,32 @@
                         <li><a class="dropdown-item" href="#">Fondos de inversión</a></li>
                         <li><a class="dropdown-item" href="#">ETFs</a></li>
                         <li><a class="dropdown-item" href="#">Dollar-Cost Averaging</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                        Análisis Técnico
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                        <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                    </ul>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                      Análisis Técnico
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Introducción</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
+                      <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
+                      <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                         Análisis Fundamental
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Análisis empresarial</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Valuación empresarial</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                    </ul>
+                        <li><a class="dropdown-item" href="#">Introducción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="30100-conbas.html">Conceptos básicos</a></li>
+                        <li><a class="dropdown-item" href="30200-anamuem.html">Análisis empresarial</a></li>
+                        <li><a class="dropdown-item" href="30300-valemp.html">Valuación empresarial</a></li>
+                      </ul>
                 </li>
                 <li class="nav-item">
                       <a class="nav-link" href="#">Contacto</a>
@@ -88,69 +91,95 @@
         </nav>
       </section>
 
-      <!-- Esto es lo que se verá en el navegador web -->
-    <h1>Análisis Fundamental</h1>
-    <h2>Tasa de descuento</h2>
-    <p>
-      Un elemento fundamental en la valuación de un activo es la tasa de descuento, con este nombre se conoce a la tasa que 
-      utilizaremos para traer a valor presente los flujos que en un futuro generará nuestra empresa sujeta a estudio.
-    </p>
-    <p>Dicha tasa, por definición, debe reflejar de manera apropiada, el riesgo que conlleva cierto emprendimiento.</p>
-    <p>
-      La sensibilidad que incorpora la tasa de riesgo al modelo de flujos descontados es alto, donde un punto porcentual puede ser 
-      la diferencia entre comprar o no comprar una acción.</p>
-    <p>Esta tasa se conoce como WACC o Weighted Average Cost of Capital, y debe reflejar la estructura de capital de la empresa.</p>
-    <p>WACC = %Deuda * Kd (1-tax%) + %Eq * Ke</p>
-    <p>•	Ponderadores: %Eq y %Deuda</p>
-    <p>•	Deuda = Deuda con costo (Bancaria, Publica con costo explícito)</p>
-    <p>•	Equity = Capital Contable</p>
-    <p>•	Kd = Costo de la deuda</p>
-    <p>•	Ke = Costo del Capital</p>
-    <h3>CAPM</h3>
-    <p>
-      El cálculo del costo de la deuda suele ser muy directo, es en la determinación del costo del capital (Ke) donde se ha ahondado 
-      y buscado una respuesta más elaborada.
-    </p>
-    <p>
-      Un modelo generalmente aceptado es implica el Capital Asset Pricing Model (CAPM), que establece la relación de retorno de todos 
-      los activos financieros ajustados en una curva.
-    </p>
-    <!-- Crear e insertar la gráfica -->
-    <p>Ri = rf + βi (rm rf)</p>
-    <p>Ri = rf + βi (Market risk premium)</p>
-    <p>ri es el retorno esperado de la empresa</p>
-    <p>ri es el retorno esperado de la empresa</p>
-    <p>Dejando como materia de cálculo el valor de la Beta.</p>
-    <h3>Beta</h3>
-    <p>
-      La beta dentro de este modelo representa la pendiente de la curva, o la parte de riesgo asociada específicamente a la empresa 
-      en cuestión.
-    </p>
-    <p>
-      Una manera de calcular la beta de una empresa, que cotiza en el mercado, es a través de una regresión. La beta nos dirá, hasta 
-      cierto punto, las diferencias en el comportamiento del precio de una acción respecto al mercado en general.
-    </p>
-    <p>
-      Una beta superior a uno se puede interpretar como un activo con un riesgo, o volatilidad, superior al mercado. Mientras que una 
-      beta inferior a uno describirá un activo con un menor grado de volatilidad percibida.
-    </p>
-    <p>
-      Los insumos para este cálculo son los cambios diarios en precio de la acción de la empresa, así como el cambio diario en el 
-      precio del índice o mercado donde se encuentren.
-    </p>
-    <p>En la siguiente tabla mostramos solo una parte de dicho cálculo:</p>
-    <!-- Elaborar tabla con los cálculos -->
-    <p>Con estos insumos, procedemos a calcular:</p>
-    <p>Beta = COV (%Acción, %Índice) / Var(%Índice)</p>
-    <p>Beta = COVAR(E3:E254,D3:D254)/Var(E:3:E254)</p>
-    <p>Beta = 0.75</p>
-    <p>
-      Con estos insumos, tenemos la información suficiente para calcular la WACC de una empresa, en caso de querer valuar una empresa 
-      no pública, atenderemos a calcular la beta de una comparable y utilizarla en suplencia. Cálculos adicionales pueden utilizarse 
-      para reflejar la correcta estructura de capital.
-    </p>
-    <h3>WACC</h3>
-    <!-- Elaborar tabla-->
+      <section>
+        <article>
+          <h1>Análisis Fundamental</h1>
+          <h2>Tasa de descuento</h2>
+          <p>
+            Un elemento fundamental en la valuación de un activo es la tasa de descuento, con este nombre se conoce a la tasa que 
+            utilizaremos para traer a valor presente los flujos que en un futuro generará nuestra empresa sujeta a estudio.
+          </p>
+          <p>Dicha tasa, por definición, debe reflejar de manera apropiada, el riesgo que conlleva cierto emprendimiento.</p>
+          <p>
+            La sensibilidad que incorpora la tasa de riesgo al modelo de flujos descontados es alto, donde un punto porcentual puede ser 
+            la diferencia entre comprar o no comprar una acción.</p>
+          <p>Esta tasa se conoce como WACC o Weighted Average Cost of Capital, y debe reflejar la estructura de capital de la empresa.</p>
+          <p>WACC = %Deuda * Kd (1-tax%) + %Eq * Ke</p>
+          <p>•	Ponderadores: %Eq y %Deuda</p>
+          <p>•	Deuda = Deuda con costo (Bancaria, Publica con costo explícito)</p>
+          <p>•	Equity = Capital Contable</p>
+          <p>•	Kd = Costo de la deuda</p>
+          <p>•	Ke = Costo del Capital</p>
+        </article>
+
+        <article>
+          <h3>CAPM</h3>
+          <p>
+            El cálculo del costo de la deuda suele ser muy directo, es en la determinación del costo del capital (Ke) donde se ha ahondado 
+            y buscado una respuesta más elaborada.
+          </p>
+          <p>
+            Un modelo generalmente aceptado es implica el Capital Asset Pricing Model (CAPM), que establece la relación de retorno de todos 
+            los activos financieros ajustados en una curva.
+          </p>
+          <!-- Crear e insertar la gráfica -->
+          <p>Ri = rf + βi (rm rf)</p>
+          <p>Ri = rf + βi (Market risk premium)</p>
+          <p>ri es el retorno esperado de la empresa</p>
+          <p>ri es el retorno esperado de la empresa</p>
+          <p>Dejando como materia de cálculo el valor de la Beta.</p>
+        </article>
+
+        <article>
+          <h3>Beta</h3>
+          <p>
+            La beta dentro de este modelo representa la pendiente de la curva, o la parte de riesgo asociada específicamente a la empresa 
+            en cuestión.
+          </p>
+          <p>
+            Una manera de calcular la beta de una empresa, que cotiza en el mercado, es a través de una regresión. La beta nos dirá, hasta 
+            cierto punto, las diferencias en el comportamiento del precio de una acción respecto al mercado en general.
+          </p>
+          <p>
+            Una beta superior a uno se puede interpretar como un activo con un riesgo, o volatilidad, superior al mercado. Mientras que una 
+            beta inferior a uno describirá un activo con un menor grado de volatilidad percibida.
+          </p>
+          <p>
+            Los insumos para este cálculo son los cambios diarios en precio de la acción de la empresa, así como el cambio diario en el 
+            precio del índice o mercado donde se encuentren.
+          </p>
+          <p>En la siguiente tabla mostramos solo una parte de dicho cálculo:</p>
+          <!-- Elaborar imagen de tabla con los cálculos -->
+          <p>Con estos insumos, procedemos a calcular:</p>
+          <p>Beta = COV (%Acción, %Índice) / Var(%Índice)</p>
+          <p>Beta = COVAR(E3:E254,D3:D254)/Var(E:3:E254)</p>
+          <p>Beta = 0.75</p>
+          <p>
+            Con estos insumos, tenemos la información suficiente para calcular la WACC de una empresa, en caso de querer valuar una empresa 
+            no pública, atenderemos a calcular la beta de una comparable y utilizarla en suplencia. Cálculos adicionales pueden utilizarse 
+            para reflejar la correcta estructura de capital.
+          </p>
+        </article>
+        <article><h3>WACC</h3></article>
+      </section>
+
+      <section class="features-wacc">
+        <article><p>Capital</p></article><article><p>12,800</p></article>
+        <article><p>Deuda</p></article><article><p>26,200</p></article>
+        <article><p>% Capital</p></article><article><p>32.8%</p></article>
+        <article><p>% Deuda</p></article><article><p>67.2%</p></article>
+        <article><p>Intereses</p></article><article><p>1,000</p></article>
+        <article><p>Costo Deuda</p></article><article><p>3.82%</p></article>
+        <article><p>Risk Free</p></article><article><p>1.60&</p></article>
+        <article><p>MRP</p></article><article><p>6.00%</p></article>
+        <article><p>Beta</p></article><article><p>0.76</p></article>
+        <article><p>Costo Capital</p></article><article><p>3.82%</p></article>
+        <article><p>Tasa Impositiva</p></article><article><p>22.0%</p></article>
+        <article><p></p></article><article><p></p></article>
+        <article><p>Deuda</p></article><article><p>2.00%</p></article>
+        <article><p>Capital</p></article><article><p>2.02%</p></article>
+        <article><p>WAAC</p></article><article><p>4.02%</p></article>
+      </section>
 
       <!-- Pie de página-->
       <footer>

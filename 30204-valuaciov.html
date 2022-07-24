@@ -13,11 +13,12 @@
   </head>
 
   <body>
+      <!-- Esto es lo que se verá en el navegador web -->
       <!-- Header con barra de navegación -->
       <section class="fixed-header">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
               <img src="images/coltech-01.png" alt="Coltech"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +27,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
                       <a class="nav-link" href="00000-blog.html">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                        Introducción
+                      <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sin página de introducción -->
+                      <a class="nav-link dropdown-toggle" href="10000-concepbas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        Empezar a invertir
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Introducción</a></li>
+                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">¿Qué es invertir?</a></li>
                         <li><a class="dropdown-item" href="#">¿Qué se necesita para invertir?</a></li>
                         <li><a class="dropdown-item" href="#">Interés compuesto</a></li>
@@ -46,33 +50,32 @@
                         <li><a class="dropdown-item" href="#">Fondos de inversión</a></li>
                         <li><a class="dropdown-item" href="#">ETFs</a></li>
                         <li><a class="dropdown-item" href="#">Dollar-Cost Averaging</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                        Análisis Técnico
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                        <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                    </ul>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                      Análisis Técnico
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Introducción</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
+                      <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
+                      <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                         Análisis Fundamental
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Análisis empresarial</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        <li><a class="dropdown-item" href="#">Valuación empresarial</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                    </ul>
+                        <li><a class="dropdown-item" href="#">Introducción</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="30100-conbas.html">Conceptos básicos</a></li>
+                        <li><a class="dropdown-item" href="30200-anamuem.html">Análisis empresarial</a></li>
+                        <li><a class="dropdown-item" href="30300-valemp.html">Valuación empresarial</a></li>
+                      </ul>
                 </li>
                 <li class="nav-item">
                       <a class="nav-link" href="#">Contacto</a>
@@ -89,86 +92,116 @@
         </nav>
       </section>
 
-      <!-- Esto es lo que se verá en el navegador web -->
-    <h1>Análisis Fundamental</h1>
-    <h2>Valuación</h2>
-    <p>
-      Uno de los objetivos últimos del análisis fundamental es lograr determinar el valor de un activo financiero. Ya sea a través 
-      de comparables, reglas de pulgar, o mediante un proceso meticuloso para determinar un valor prospectivo, utilizando herramientas 
-      generalmente aceptadas y sentido común.
-    </p>
-    <p>
-      Una de las metodologías ampliamente reconocidas y adoptadas, considera que el valor justo estará determinado por los flujos de 
-      efectivo futuros que una empresa pueda generar, descontados (o traídos a valor presente) a una tasa que refleje el riesgo 
-      adecuado.
-    </p>
-    <p>Conceptualmente aquí tenemos un marco muy claro, con dos elementos a determinar.</p>
-    <p>•	Flujos</p>
-    <p>•	Riesgo</p>
-    <!-- Elaborar imagen de la formula de VP -->
-    <h3>Flujos</h3>
-    <p>
-      Determinar los flujos que una empresa logrará generar en el futuro pareciera un acto de adivinación. ¿Cómo saber cuánto va a 
-      vender esta empresa en 10 años, un año, mañana? Es complicado, ahora incorporemos costos, gastos, intereses, impuestos, 
-      políticas de dividendos…
-    </p>
-    <p>
-      Ahora bien, si a cada paso que damos identificamos supuestos lógicos, podemos errar, pero dentro de un marco de pensamiento 
-      ordenado, y regresar sobre nuestros pasos para ajustar nuestro modelo.
-    </p>
-    <p>
-      A medida que las empresas tienen más historia, y logran estabilidad en sus flujos se vuelven más predecibles, y en ocasiones 
-      la labor es menos compleja. Es con las empresas nuevas donde crecer 30 o 300 veces es posible, y los resultados 
-      considerablemente distintos.
-    </p>
-    <p>
-      En tu análisis buscarás poder proyectar direccionalmente elementos desde las ventas, hasta el EBITDA de la empresa, intentando 
-      identificar necesidades de financiamiento, niveles de apalancamiento y puntos de inflexión en los resultados.
-    </p>
-    <h3>Riesgo</h3>
-    <p>
-      Los componentes de una tasa suelen incluir, la tasa libre de riesgo, el riesgo de contraparte, el riesgo de plazo, inflación, 
-      cambiario, entre otros. Incluso deben reflejar la probabilidad de no ocurrencia de un evento.
-    </p>
-    <p>
-      Imagina que estás valuando una empresa que asumes verá crecer sus ventas 5 veces en los próximos dos años. La incertidumbre se 
-      reflejará en una tasa más alta de lo esperado, así como por el otro lado, el lograrlo se puede ver como un gran retorno, 
-      reflejado en la misma tasa.
-    </p>
-    <p>
-      En el mundo financiero esta tasa se conoce como WACC o Weighted Average Cost of Capital. Esta tasa refleja la estructura de 
-      capital de la empresa, es decir cómo se están financiando los activos, con deuda o con capital.
-    </p>
-    <p>WAAC = %Deuda * Kd(1-tax%) + %Eq. * Ke</p>
-    <p>Donde:</p>
-    <p>•	Ponderadores: % Eq. Y %Deuda</p>
-    <p>•	Deuda = Deuda con costo (Bancaria, Publica con costo explicito)</p>
-    <p>•	Equity = Capital Contable</p>
-    <p>•	Kd = Costo de la deuda</p>
-    <p>•	Ke = Costo de Capital</p>
-    <p>
-      El Kd lo podemos calcular con los intereses efectivamente pagados sobre la deuda con costo, o el costo de financiamiento al 
-      que pueda acceder la empresa (contratar un crédito).
-    </p>
-    <p>
-      Tax% es la tasa fiscal efectiva de los últimos ejercicios, y reflejará un escudo fiscal que se da de forma natural al 
-      financiarte con deuda, y reducir la base gravable de la empresa.
-    </p>
-    <p>
-      El Ke o costo de capital, implica el uso de otro modelo conocido como Capital Asset Pricing Model, que establece la relación 
-      de retorno de todos los activos financieros ajustados en una curva.
-    </p>
-    <p>La relación entre riesgo (beta) y retorno es lineal, descrito por la siguiente fórmula:</p>
-    <p>Ri = rf + βi (rm - rf)</p>
-    <p>Ri = rf + βi (Market risk premium)</p>
-    <p>Donde:</p>
-    <p>•	ri  es el retorno esperado del capital del proyecto, empresa, idea</p>
-    <p>•	rm es el retorno esperado del mercado</p>
-    <p>
-      Una vez estimados los flujos y determinada la tasa justa, el proceso de valuación debiera ser más mecánico, y con eso 
-      llegaríamos a un valor justo teórico estimado. La diferencia entre ese precio y el de mercado nos dictará si conviene comprar 
-      la acción o esperar a un mejor momento.
-    </p>
+      <section>
+        <article>
+          <h1>Análisis Fundamental</h1>
+          <h2>Valuación</h2>
+          <p>
+            Uno de los objetivos últimos del análisis fundamental es lograr determinar el valor de un activo financiero. Ya sea a través 
+            de comparables, reglas de pulgar, o mediante un proceso meticuloso para determinar un valor prospectivo, utilizando herramientas 
+            generalmente aceptadas y sentido común.
+          </p>
+          <p>
+            Una de las metodologías ampliamente reconocidas y adoptadas, considera que el valor justo estará determinado por los flujos de 
+            efectivo futuros que una empresa pueda generar, descontados (o traídos a valor presente) a una tasa que refleje el riesgo 
+            adecuado.
+          </p>
+          <p>Conceptualmente aquí tenemos un marco muy claro, con dos elementos a determinar.</p>
+          <p>•	Flujos</p>
+          <p>•	Riesgo</p>
+          <!-- Elaborar imagen de la formula de VP -->
+        </article>
+
+        <article>
+          <h3>Flujos</h3>
+          <p>
+            Determinar los flujos que una empresa logrará generar en el futuro pareciera un acto de adivinación. ¿Cómo saber cuánto va a 
+            vender esta empresa en 10 años, un año, mañana? Es complicado, ahora incorporemos costos, gastos, intereses, impuestos, 
+            políticas de dividendos…
+          </p>
+          <p>
+            Ahora bien, si a cada paso que damos identificamos supuestos lógicos, podemos errar, pero dentro de un marco de pensamiento 
+            ordenado, y regresar sobre nuestros pasos para ajustar nuestro modelo.
+          </p>
+          <p>
+            A medida que las empresas tienen más historia, y logran estabilidad en sus flujos se vuelven más predecibles, y en ocasiones 
+            la labor es menos compleja. Es con las empresas nuevas donde crecer 30 o 300 veces es posible, y los resultados 
+            considerablemente distintos.
+          </p>
+          <p>
+            En tu análisis buscarás poder proyectar direccionalmente elementos desde las ventas, hasta el EBITDA de la empresa, intentando 
+            identificar necesidades de financiamiento, niveles de apalancamiento y puntos de inflexión en los resultados.
+          </p>
+        </article>
+
+        <article>
+          <h3>Riesgo</h3>
+          <p>
+            Los componentes de una tasa suelen incluir, la tasa libre de riesgo, el riesgo de contraparte, el riesgo de plazo, inflación, 
+            cambiario, entre otros. Incluso deben reflejar la probabilidad de no ocurrencia de un evento.
+          </p>
+          <p>
+            Imagina que estás valuando una empresa que asumes verá crecer sus ventas 5 veces en los próximos dos años. La incertidumbre se 
+            reflejará en una tasa más alta de lo esperado, así como por el otro lado, el lograrlo se puede ver como un gran retorno, 
+            reflejado en la misma tasa.
+          </p>
+          <p>
+            En el mundo financiero esta tasa se conoce como WACC o Weighted Average Cost of Capital. Esta tasa refleja la estructura de 
+            capital de la empresa, es decir cómo se están financiando los activos, con deuda o con capital.
+          </p>
+          <p>WAAC = %Deuda * Kd(1-tax%) + %Eq. * Ke</p>
+          <p>Donde:</p>
+          <p>•	Ponderadores: % Eq. Y %Deuda</p>
+          <p>•	Deuda = Deuda con costo (Bancaria, Publica con costo explicito)</p>
+          <p>•	Equity = Capital Contable</p>
+          <p>•	Kd = Costo de la deuda</p>
+          <p>•	Ke = Costo de Capital</p>
+          <p>
+            El Kd lo podemos calcular con los intereses efectivamente pagados sobre la deuda con costo, o el costo de financiamiento al 
+            que pueda acceder la empresa (contratar un crédito).
+          </p>
+          <p>
+            Tax% es la tasa fiscal efectiva de los últimos ejercicios, y reflejará un escudo fiscal que se da de forma natural al 
+            financiarte con deuda, y reducir la base gravable de la empresa.
+          </p>
+          <p>
+            El Ke o costo de capital, implica el uso de otro modelo conocido como Capital Asset Pricing Model, que establece la relación 
+            de retorno de todos los activos financieros ajustados en una curva.
+          </p>
+          <p>La relación entre riesgo (beta) y retorno es lineal, descrito por la siguiente fórmula:</p>
+          <p>Ri = rf + βi (rm - rf)</p>
+          <p>Ri = rf + βi (Market risk premium)</p>
+          <p>Donde:</p>
+          <p>•	ri  es el retorno esperado del capital del proyecto, empresa, idea</p>
+          <p>•	rm es el retorno esperado del mercado</p>
+          <p>
+            Una vez estimados los flujos y determinada la tasa justa, el proceso de valuación debiera ser más mecánico, y con eso 
+            llegaríamos a un valor justo teórico estimado. La diferencia entre ese precio y el de mercado nos dictará si conviene comprar 
+            la acción o esperar a un mejor momento.
+          </p>
+        </article>
+
+        <article>
+          <h3>Conclusión</h3>
+          <p>
+            El análisis fundamental es una herramienta poderosa para entender el fondo de los que estamos comprando al invertir. Y en esta 
+            ocasión fuimos un paso más adelante para contextualizar estrategias de inversión sectoriales.
+          </p>
+          <p>
+            Una vez que aprendimos a utilizar los estados financieros y las razones financieras, vimos que existen parámetros muy 
+            específicos de determinadas industrias, con adaptaciones muy particulares.
+          </p>
+          <p>
+            En nuestro arsenal de herramientas para encontrar valor al momento de invertir, conocimos los múltiplos y su utilidad, ya que 
+            podemos identificar grandes empresas, pero el precio que estemos dispuestos a pagar será una variable importante en nuestro 
+            rendimiento.
+          </p>
+          <p>
+            Por último, logramos ligar la idea de riesgo y rendimiento en el contexto de la valuación, cuál es la relación que existe entre 
+            estos dos para determinar el valor de un activo y tomar decisiones educadas al momento de invertir.
+          </p>
+        </article>
+      </section>
 
       <!-- Pie de página-->
       <footer>

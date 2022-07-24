@@ -222,3 +222,15 @@ li {
 .email-boletin:hover {
   background-color: blue;
 }
+
+.features-valpv {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.features-valpu{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}

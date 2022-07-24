@@ -8,15 +8,16 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>Bursatech - Razones Financieras</title>
         <link rel="stylesheet" type="text/css" href="styles/navbar-footer.css" />
-        <link rel="stylesheet" type="text/css" href="30103-razfin.html" />
+        <link rel="stylesheet" type="text/css" href="styles/30103-razfin.css" />
         <script type="text/javascript" src="scripts/finan-funct.js"></script>
     </head>
     <body>
-        <!-- Header con barra de navegación -->
+            <!-- Esto es lo que se verá en el navegador web -->
+            <!-- Header con barra de navegación -->
         <section class="fixed-header">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top">
               <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="#">
                   <img src="images/coltech-01.png" alt="Coltech"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +26,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html">Inicio</a>
+                          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
                           <a class="nav-link" href="00000-blog.html">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                            Introducción
+                          <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sin página de introducción -->
+                          <a class="nav-link dropdown-toggle" href="10000-concepbas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                            Empezar a invertir
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Introducción</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">¿Qué es invertir?</a></li>
                             <li><a class="dropdown-item" href="#">¿Qué se necesita para invertir?</a></li>
                             <li><a class="dropdown-item" href="#">Interés compuesto</a></li>
@@ -45,33 +49,32 @@
                             <li><a class="dropdown-item" href="#">Fondos de inversión</a></li>
                             <li><a class="dropdown-item" href="#">ETFs</a></li>
                             <li><a class="dropdown-item" href="#">Dollar-Cost Averaging</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                            Análisis Técnico
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                                <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                            <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
-                                <!-- <li><hr class="dropdown-divider"></li> -->
-                            <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
-                                <!-- <li><hr class="dropdown-divider"></li> -->
-                        </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                          Análisis Técnico
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Introducción</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
+                          <li><a class="dropdown-item" href="#">Análisis de comportamientos</a></li>
+                          <li><a class="dropdown-item" href="#">Fortalezas y debilidades de las tendencias.</a></li>
+                      </ul>
                     </li>
                     <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                             Análisis Fundamental
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Conceptos básicos</a></li>
-                                <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                            <li><a class="dropdown-item" href="#">Análisis empresarial</a></li>
-                                <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                            <li><a class="dropdown-item" href="#">Valuación empresarial</a></li>
-                                <!-- <li><hr class="dropdown-divider"></li> Revisar como hacerlo -->
-                        </ul>
+                            <li><a class="dropdown-item" href="#">Introducción</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="30100-conbas.html">Conceptos básicos</a></li>
+                            <li><a class="dropdown-item" href="30200-anamuem.html">Análisis empresarial</a></li>
+                            <li><a class="dropdown-item" href="30300-valemp.html">Valuación empresarial</a></li>
+                          </ul>
                     </li>
                     <li class="nav-item">
                           <a class="nav-link" href="#">Contacto</a>
@@ -87,108 +90,132 @@
               </div>
             </nav>
           </section>
-            <!-- Esto es lo que se verá en el navegador web -->
-        <h1>Análisis Fundamental</h1>
-        <h2>Razones Financieras</h2>
-        <p>
-            Estas son herramientas poderosas para poder estandarizar criterios, medir eficiencias, mejoras y comparar distintas 
-            empresas.
-        </p>
-        <p>
-            Nos ayuda a comprender el desempeño, en ocasiones, entrelazando los diferentes estados financieros.
-        </p>
-        <h3>Rentabilidad</h3>
-        <p>
-            Mejor conocido como márgenes, buscan mostrar cómo se distribuye porcentualmente los distintos renglones del estado de 
-            resultados. Básicamente tomamos cada cuenta y la dividimos entre las ventas del período.
-        </p>
-        <p>
-            Podemos ver que, por cada peso de ingresos, el 40% o 40 centavos están relacionados con el costo, el 25% o 25 centavos 
-            se van en gastos, mientras que a los accionistas les queda un 14% o 14 centavos.
-        </p>
+          
+          <section>
+            <article>
+                <h1>Análisis Fundamental</h1>
+                <h2>Razones Financieras</h2>
+                <p>
+                    Estas son herramientas poderosas para poder estandarizar criterios, medir eficiencias, mejoras y comparar distintas 
+                    empresas.
+                </p>
+                <p>
+                    Nos ayuda a comprender el desempeño, en ocasiones, entrelazando los diferentes estados financieros.
+                </p>
+            </article>
+
+            <article>
+                <h3>Rentabilidad</h3>
+                <p>
+                    Mejor conocido como márgenes, buscan mostrar cómo se distribuye porcentualmente los distintos renglones del estado de 
+                    resultados. Básicamente tomamos cada cuenta y la dividimos entre las ventas del período.
+                </p>
+                <p>
+                    Podemos ver que, por cada peso de ingresos, el 40% o 40 centavos están relacionados con el costo, el 25% o 25 centavos 
+                    se van en gastos, mientras que a los accionistas les queda un 14% o 14 centavos.
+                </p>
+            </article>
+        </section>
         <!-- Elaborar tabla con formulas y ejemplo -->
-        <h3>Manejo de Activos</h3>
-        <p>Nos indican que tan bien se manejan los activos dentro de la empresa para generar ventas, o flujo.</p>
-        <p>La rotación de activos la podemos calcular como:</p>
-        <p>Rotación de activos = Ventas 12M / activos totales</p>
-        <p>
-            Una empresa que tiene una mayor rotación se puede considerar más eficiente. Cabe la pena señalar que las razones 
-            financieras suelen mostrar mucha diferencia entre industrias, o ciclos de vida de las empresas.
-        </p>
-        <!-- Elaborar tabla de lo siguiente -->
-            <p>Rotación de Cuentas por Cobrar -	Rotación de Inventarios - 	Rotación de Proveedores</p>
-            <p>
-                - Cuantas veces al año cobro mi saldo en cuentas por cobrar	
-                - Cuantas veces al año vendo mis Inventarios	
-                - Cuantas veces al año liquido mis cuentas por pagar
-            </p>
-            <p>
-                - ARTO = Ingresos / CxC	
-                - ITO = Costos / Inventario	
-                - APTO = Costos / Proveedores</p>
-            <p>Días de Cuentas por Cobrar -	Días de inventario -	Días de Proveedores</p>
-            <p>
-                - Cuantos días me tardo en cobrarle a mis clientes	
-                - Cuantos días me tardo en vender mi inventario	
-                - Cuantos días me tardé en pagarle a mis proveedores
-            </p>
-            <p>
-                = 365 / ARTO	
-                = 365 / ITO	
-                =365 / APTO
-            </p>
-        <h3>Deuda y Liquidez</h3>
-        <p>
-            Estas razones nos hablan sobre la capacidad de la empresa para cubrir sus obligaciones de corto y largo plazo, así 
-            como de la composición de su estructura de capital, es decir, los activos que tienen los están financiando 
-            mayoritariamente los socios o los acreedores. Es importante guardar un equilibrio y optimizar el riesgo.
-        </p>
-        <!-- Elaborar tabla de lo siguiente -->
-            <p>
-                Razón	
-                Formula	
-                Descripción
-            </p>
-            <p>
-                Current Ratio	
-                Activo Circulante / Pasivo Corto Plazo	
-                Cuantas veces están cubiertas las obligaciones de corto plazo por sus activos circulantes.
-            </p>
-            <p>
-                Prueba del Ácido	
-                (Activo Circulante – Inventario) / Pasivo Corto Plazo	
-                Estresa la prueba anterior al descontar el inventario, asumiendo poco desplazamiento.
-            </p>
-            <p>
-                Cobertura de Intereses	
-                Utilidad Operativa / Intereses	
-                Que tal holgada es la utilidad respecto al servicio de la deuda.
-            </p>
-            <p>
-                Apalancamiento	
-                Activos / Capital	
-                Que tanta deuda financia nuestros activos.
-            </p>
-        <h3>Retorno sobre inversión</h3>
-        <p>
-            En el modelo DuPont podemos desagregar el retorno sobre como capital como función de tres grandes rubros, 
-        rentabilidad, rotación de activos y apalancamiento.
-        </p>
-        <!-- Elaborar tabla de lo siguiente -->
-        <p>
-            Margen Neto	x	Rotación Activos	x	Apalancamiento	=	Retorno sobre Capital
-        </p>
-        <p>
-            Utilidad Neta /Ingresos		
-            Ingresos /Activos		
-            Activos /Capital		
-            Utilidad Neta /Capital
-        </p>
-        <p>
-            Incorporamos rentabilidad		
-            Eficiencia en manejo de activos		
-            Estructura de capital
-        </p>
+        <section class="features-rentab">
+            <article><p>Ingresos</p></article><article><p>1,000</p></article><article><p></p></article><article><p>100%</p></article>
+            <article><p>(-) Costos</p></article><article><p>400</p></article><article><p>Margen de Costos</p></article><article><p>40%</p></article>
+            <article><p>(=) Utilidad Bruta</p></article><article><p>600</p></article><article><p>Margen Bruto</p></article><article><p>60%</p></article>
+            <article><p>(-) Gastos</p></article><article><p>250</p></article><article><p>Margen de Gastos</p></article><article><p>25%</p></article>
+            <article><p>(=) Utilidad Operativa</p></article><article><p>350</p></article><article><p>Margen Operativo</p></article><article><p>35%</p></article>
+            <article><p>(-) Intereses y Financieros</p></article><article><p>150</p></article><article><p>Margen Financiero</p></article><article><p>15%</p></article>
+            <article><p>(=) Utilidad Antes de Impuestos</p></article><article><p>200</p></article><article><p></p></article><article><p>20%</p></article>
+            <article><p>(-) Impuestos</p></article><article><p>60</p></article><article><p></p></article><article><p>6%</p></article>
+            <article><p>(=) Utilidad Neta</p></article><article><p>140</p></article><article><p>Margen Neto</p></article><article><p>14%</p></article>
+        </section>
+        <section>
+            <article>
+                <h3>Manejo de Activos</h3>
+                <p>Nos indican que tan bien se manejan los activos dentro de la empresa para generar ventas, o flujo.</p>
+                <p>La rotación de activos la podemos calcular como:</p>
+                <p>Rotación de activos = Ventas 12M / activos totales</p>
+                <p>
+                    Una empresa que tiene una mayor rotación se puede considerar más eficiente. Cabe la pena señalar que las razones 
+                    financieras suelen mostrar mucha diferencia entre industrias, o ciclos de vida de las empresas.
+                </p>
+            </article>
+        </section>
+        <section class="features-manact">
+            <article><p>Rotación de Cuentas por Cobrar</p></article>
+            <article><p>Rotación de Inventarios</p></article>
+            <article><p>Rotación de Proveedores</p></article>
+            <article><p>Cuantas veces al año cobro mi saldo en cuentas por cobrar</p></article>
+            <article><p>Cuantas veces al año vendo mis Inventarios</p></article>
+            <article><p>Cuantas veces al año liquido mis cuentas por pagar</p></article>
+            <article><p>ARTO = Ingresos / CxC</p></article>
+            <article><p>ITO = Costos / Inventario</p></article>
+            <article><p>APTO = Costos / Proveedores</p></article>
+
+            <article><p>Días de Cuentas por Cobrar</p></article>
+            <article><p>Días de inventario</p></article>
+            <article><p>Días de Proveedores</p></article>
+            <article><p>Cuantos días me tardo en cobrarle a mis clientes</p></article>
+            <article><p>Cuantos días me tardo en vender mi inventario</p></article>
+            <article><p>Cuantos días me tardé en pagarle a mis proveedores</p></article>
+            <article><p>= 365 / ARTO</p></article>
+            <article><p>= 365 / ITO</p></article>
+            <article><p>= 365 / APTO</p></article>
+        </section>
+
+        <section>
+            <article>
+                <h3>Deuda y Liquidez</h3>
+                <p>
+                    Estas razones nos hablan sobre la capacidad de la empresa para cubrir sus obligaciones de corto y largo plazo, así 
+                    como de la composición de su estructura de capital, es decir, los activos que tienen los están financiando 
+                    mayoritariamente los socios o los acreedores. Es importante guardar un equilibrio y optimizar el riesgo.
+                </p>
+            </article>
+        </section>
+        <section class="features-liquidez">
+            <article><p>Razón</p></article>
+            <article><p>Formula</p></article>
+            <article><p>Descripción</p></article>
+            <article><p>Current Ratio</p></article>
+            <article><p>Activo Circulante / Pasivo Corto Plazo</p></article>
+            <article><p>Cuantas veces están cubiertas las obligaciones de corto plazo por sus activos circulantes.</p></article>
+            <article><p>Prueba del Ácido</p></article>
+            <article><p>(Activo Circulante - Inventario) / Pasivo Corto Plazo</p></article>
+            <article><p>Estresa la prueba anterior al descontar el inventario, asumiendo poco desplazamiento.</p></article>
+            <article><p>Cobertura de Intereses</p></article>
+            <article><p>Utilidad Operativa / Intereses</p></article>
+            <article><p>Que tal holgada es la utilidad respecto al servicio de la deuda.</p></article>
+            <article><p>Apalancamiento</p></article>
+            <article><p>Activos / Capital</p></article>
+            <article><p>Que tanta deuda financia nuestros activos.</p></article>
+        </section>
+
+        <section>
+            <article>
+                <h3>Retorno sobre inversión</h3>
+                <p>
+                    En el modelo DuPont podemos desagregar el retorno sobre como capital como función de tres grandes rubros, 
+                rentabilidad, rotación de activos y apalancamiento.
+                </p>
+            </article>
+        </section>
+
+        <section class="features-retorno">
+            <article><p>Margen Neto</p></article>
+            <article><p>x Rotación Activos</p></article>
+            <article><p>x Apalancamiento</p></article>
+            <article><p>= Retorno sobre Capital</p></article>
+            <article><p>Utilidad Neta /Ingresos</p></article>
+            <article><p>Ingresos /Activos</p></article>
+            <article><p>Activos /Capital</p></article>
+            <article><p>Utilidad Neta /Capital</p></article>
+            <article><p>Incorporamos rentabilidad</p></article>
+            <article><p>Eficiencia en manejo de activos</p></article>
+            <article><p>Estructura de capital</p></article>
+            <article><p></p></article>
+        </section>
+
+        <section></section>
 
             <!-- Pie de página-->
         <footer>

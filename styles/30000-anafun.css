@@ -222,9 +222,3 @@ li {
 .email-boletin:hover {
   background-color: blue;
 }
-
-.features-wacc {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(15, 1fr);
-}
