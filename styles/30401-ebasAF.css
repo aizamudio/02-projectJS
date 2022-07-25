@@ -222,3 +222,24 @@ li {
 .email-boletin:hover {
   background-color: blue;
 }
+
+/*Recién creados */
+
+.main-ebasAF {
+  text-align: justify;
+  width: 90%;
+  margin: 100px auto; /* Checar el tema de los margenes */
+  align-items: center;
+}
+
+.features-balgral {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(39, 1fr);
+}
+
+.features-EstRes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+}

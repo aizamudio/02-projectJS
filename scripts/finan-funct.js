@@ -1,11 +1,35 @@
 /* Definición de variables */
-let activo;
+/* Cuentas de Balance General */
+let efectivo;
+let ctasXCob;       /* Cuentas por cobrar */
+let inventario;
 let actCirc;        /* Activo Circulante */
+let plantEq;        /* Planta y equipo */
+let eedificios;
+let inversiones;
+let actFijo;        /* Activo Fijo */
+let marcas;
+let patentes;
+let credMerc;       /* Crédito Mercantil */
+let actInt;         /* Activos intangibles */
+let totAct;         /* Total Activo */
+let activo;
+let proveedores;
+let aceedores;
+let deuBanc;        /* Deuda Bancaria */
+let pasCtoPlaz;     /* Pasivo a Corto Plazo */
+let deuBanLP;       /* Deuda Bancaria a Largo Plazo */
+let deuBur;         /* Deuda Bursátil */
+let pasLP;          /* Pasivo de Largo Plazo */
+let totPas;         /* Total Pasivo */
 let pasivo;
-
-let pasCtoPlaz;     /*  Pasivo Corto Plazo */
+let capContri;      /* Capital Contribuido */
+let utilTRet;       /* Utilidades Retenidas */
+let totCap;         /* Total Capital */
 let capital;
 let capCont;        /* Capital Contable */
+
+/* Cuentas de Estado de Resultados */
 let ingresos;
 let costos;
 let utilBrut;       /* Utilidad Bruta */
@@ -37,13 +61,13 @@ let mgnFinanEF;     /* Margen Financiero en empresas financieras*/
 let mgnUAI;         /* Margen de Utilidad Antes de Impuestos */
 let mgnNeto;        /* Margen de Utilidad Neta */
 let ARTO;           /* Rotación de Cuentas por Cobrar */
-let ctasXCob;       /* Cuentas por cobrar */
+
 let diasCxC;        /* Días de Cuentas por Cobrar */
 let ITO;            /* Rotación de Inventarios */
-let inventario;
+
 let diasInven;      /* Días de inventario */
 let APTO            /* Rotación de Proveedores */
-let proveedores;
+
 let diasProveed;    /* Días de Proveedores */
 let currRatio;      /* Current Ratio */
 let prueAcido;      /* Prueba del Ácido */
@@ -81,58 +105,224 @@ let valPerp;        /* Valor perpetuidad */
 let valG;           /* Valor de g, valor que representa el crecimiento constante */
 
 /*Estados Financieros - Balance general */
-activo = pasivo + capital;
+
+function activoCirc(efectivo, ctasXCob, inventario){    /* Determinación del Activo Circulante o Activo a Corto Plazo */
+    actCirc = efectivo + ctasXCob + inventario;
+    console.log(actCirc);
+}
+
+function activoFijo(plantEq, edificios, inversiones) {  /* Determinación del Activo Fijo */
+    actFijo = plantEq + edificios + inversiones;
+    console.log(actFijo);
+}
+
+function activoInt (marcas, patentes, credMerc){        /* Determinación del Activo Intangible */
+    actInt = marcas + patentes + credMerc;
+    console.log(actInt);
+}
+
+function totActivo (actCirc, actFijo, actInt) {         /* Determinación del Total Activo */
+    totAct = actCirc + actFijo + actInt;
+    console.log(totAct);
+}
+
+function pasivoCP(proveedores, aceedores, deuBanc) {    /* Determinación del Pasivo a Corto Plazo */
+    pasCtoPlaz = proveedores + aceedores + deuBanc;
+    console.log(pasCtoPlaz);
+}
+
+function pasivoLP (deuBanLP, deuBur) {                  /*  Determinación del Pasivo de Largo Plazo */
+    pasLP = deuBanLP + deuBur;
+    console.log(pasLP);
+}
+
+function totPasivo(pasCtoPlaz, pasLP) {                 /* Determinación del Total Pasivo */
+    totPas = pasCtoPlaz + pasLP;
+    console.log(totPas);
+}
+
+function totCapital(capContri, utilTRet) {              /* Determinación del Total Capital */
+    totCap = capContri + utilTRet;
+    console.log(totCap);
+}
+
+function validaTotales(totAct, totPas, totCap) {
+    let mensaje = totAct = (totPas + totCap) ? "Las cuentas cuadran" : "Las cuentas no cuadran";
+    console.log(mensaje);
+}
 
 /*Estados Financieros - Estado de Resultados */
-utilBrut = ingresos - costos;
-utilOper = utilBrut - gastos;
-utilAntImp = utilOper -interFinan;
-utilNeta = utilAntImp - impuestos;
+
+function utilidadBruta (ingresos, costos){
+    utilBrut = ingresos - costos;
+    console.log(utilBrut);
+}
+
+function utilidadOper(utilBrut, gastos) {
+    utilOper = utilBrut - gastos;
+    console.log(utilOper)
+}
+
+function utilidadAI(utilOper, interFinan) {
+    utilAntImp = utilOper - interFinan;
+    console.log(utilAntImp);
+}
+
+function utilidadNeta(utilAntImp, impuestos) {
+    utilNeta = utilAntImp - impuestos;
+    console.log(utilNeta);
+}
 
 /*Estados Financieros - Flujo de Efectivo */
-fluOper = utilOper + depreAmor - intPag - impEFePag - cambCapTrab;
-fluInv = fluOper - gtosInv + ingVtaAct;
-fluFin = fluInv + prestamos + ingColAcc - pagPres -pagDiv;
+
+function flowOper(utilOper, depreAmor, intPag, impEFePag, cambCapTrab) {    /* Determinación del Flujo de Operación */
+    fluOper = utilOper + depreAmor - intPag - impEFePag - cambCapTrab;
+    console.log(fluOper);
+}
+
+function flowInv(fluOper, gtosInv, ingVtaAct) {                     /* Determinación del Flujo de Inversión */
+    fluInv = fluOper - gtosInv + ingVtaAct;
+    console.log(fluInv)
+}
+
+function flowFin(fluInv, prestamos, ingColAcc, pagPres, pagDiv) {   /* Determinación del Flujo de Financiamiento */
+    fluFin = fluInv + prestamos + ingColAcc - pagPres - pagDiv;
+    console.log(fluFin);
+}
 
 /*Estados Financieros - Razones Financieras */
 /* Rentabilidad */
-mgnCostos = costos / ingresos;
-mgnBruto = utilBrut / ingresos;
-mgnGastos = gastos / ingresos;
-mgnOper = utilOper / ingresos;
-mgnFin = interFinan / ingresos;
-mgnUAI = utilAntImp / ingresos;
-mgnNeto = utilNeta / ingresos;
+
+function margCostos(costos, ingresos) {          /* Determinación del Margen de Costos */
+    mgnCostos = costos / ingresos;
+    console.log(mgnCostos);
+}
+
+function margBruto(utilBrut, ingresos) {       /* Determinación del Margen Bruto */
+    mgnBruto = utilBrut / ingresos;
+    console.log(mgnBruto)
+}
+
+function margGastos(gastos, ingresos) {         /* Determinación del Margen de Gastos */
+    mgnGastos = gastos / ingresos;
+    console.log(mgnGastos);
+}
+
+function margOper(utilOper, ingresos) {         /* Determinación del Margen Operativo */
+    mgnOper = utilOper / ingresos;
+    console.log(mgnOper);
+}
+
+function margFin(interFinan, ingresos) {        /* Determinación del Margen Financiero */
+    mgnFin = interFinan / ingresos;
+    console.log(mgnFin);
+}
+
+function margUAI(utilAntImp, ingresos) {
+    mgnUAI = utilAntImp / ingresos;
+    console.log(mgnUAI);
+}
+
+function margImp(impuestos, ingresos) {
+    let mgnImp = impuestos / ingresos;
+    console.log(mgnImp);
+}
+
+function margNeto(utilNeta, ingresos) {         /* Determinación del Margen Neto */
+    mgnNeto = utilNeta / ingresos;
+    console.log(mgnNeto);
+}
+
+
+function validaTotales(totAct, totPas, totCap) {
+    let mensaje = utilNeta < 0 ? "Rentabilidad Negativa" : "Rentabilidad Positiva";
+    console.log(mensaje);
+}
 
 /* Manejo de activos */
-ARTO = ingresos / ctasXCob;
-diasCxC = 365 / ARTO;
-ITO = costos / inventario;
-diasInven = 365 / ITO;
-APTO = costos / proveedores;
-diasProveed = 365 /APTO;
+
+function razonCxC(ingresos, ctasXCob) {            /* Rotación y Días de Cuentas por Cobrar */
+    ARTO = ingresos / ctasXCob;
+    diasCxC = 365 / ARTO;
+    console.log(ARTO, diasCxC);
+}
+
+function razonInven(costos, inventario) {          /* Rotación y Días de Inventario */
+    ITO = costos / inventario;
+    diasInven = 365 / ITO;
+    console.log(ITO, diasInven);
+}
+
+function razonProvee(costos, proveedores) {         /* Rotación y de Proveedores */
+    APTO = costos / proveedores;
+    diasProveed = 365 /APTO;
+    console.log(APTO, diasProveed);
+}
 
 /* Deuda y Liquidez */
-currRatio = actCirc / pasCtoPlaz;
-prueAcido = (actCirc - inventario) / pasCtoPlaz;
-cobInt = utilOper / intereses;
-apalancamiento = activo / capital;
+
+function currentRatio(actCirc, pasCtoPlaz) {            /* Current Ratio */
+    currRatio = actCirc / pasCtoPlaz;
+    console.log(currRatio);
+}
+
+function pruebaAcido(actCirc, inventario, pasCtoPlaz) { /* Prueba del Ácido */
+    prueAcido = (actCirc - inventario) / pasCtoPlaz;
+    console.log(prueAcido)
+}
+
+function coberInter(utilOper, intereses) {             /* Cobertura de Intereses */
+    cobInt = utilOper / intereses;
+    console.log(cobInt)
+}
+
+function apalanc(activo, capital) {                    /* Apalancamiento */
+    apalancamiento = activo / capital;
+    console.log(apalancamiento);
+}
 
 /* Retorno sobre inversión */
-rotActivos = ingresos / activo;
-RetorCap = utilNeta / capital;
+function retornoCap (utilNeta, ingresos, activo, capital) {     /*Retorno sobre inversión */
+    let mgNeto = utilNeta / ingresos;
+    let eficAct = ingresos / activo;
+    let structCap = activo / capital;
+    let returnCap = mgNeto * eficAct * structCap;
+    console.log(mgNeto, eficAct, structCap, returnCap);
+}
 
 /* Comparando empresas */
-mgnFinanEF = intCob / intPag;
+/* mgnFinanEF = intCob / intPag; */
+/* Desarrollar comparación entre empresas */
 
 /* Análisis multi empresarial - Múltiplos */
+/* Desarrollar comparación entre empresas */
 
-valorCap = numAcciones * precioAccion;
-precioUtil = valorCap / utilDoceM;
+function valorCapit(numAcciones, precioAccion) {        /* Valor de Capitalización */
+    valorCap = numAcciones * precioAccion;
+    console.log(valorCap);
+}
+
+function precioUtilidad(valorCap, utilDoceM) {          /* Precio Utilidad */
+    precioUtil = valorCap / utilDoceM;
+    console.log(precioUtil);
+}
+
+function enterValue(valorCap, deudaNeta) {              /* Enterprise Value */
 entVal = valorCap + deudaNeta;
-evEbitda = entVal / ebitda;
-vl = activo - pasivo;
-pVl = precioAccion / vl;
+console.log(entVal);
+}
+
+function evaEbitda(entVal, ebitda) {                    /* EV/EBITDA */
+    evEbitda = entVal / ebitda;
+    console.log(evEbitda);
+}
+
+function prVl(activo, pasivo, precioAccion) {           /* P/VL */
+    vl = activo - pasivo;
+    pVl = precioAccion / vl;
+    console.log(vl, pVl);
+}
+
 
 /* Análisis multi empresarial - Valuación */
 
@@ -140,30 +330,50 @@ pVl = precioAccion / vl;
 Investigar mas acerca de determinación de flujos de efectivo futuro */
 
 /* Riesgo */
-wacc = (perDeu * kDeu * ( 1-perTax)) + (perEq * kEq); /* Revisar formula */
+function taxWacc(perDeu, kDeu, perTax, perEq,  kEq) {
+    /* wacc = (perDeu * kDeu * ( 1-perTax)) + (perEq * kEq); */
+    let parDeu = (perDeu * kDeu * ( 1-perTax));
+    let parEq = (perEq * kEq);
+    wacc = parDeu + parEq;
+    console.log(parDeu, parEq, wacc);
+}
 
 /*  Investigar bien la siguiente formula:
     retFin = rf + beta (retEsper - rf)
     retFin = rf + beta (market risk premium)*/
 
-/* Valuación multiempresarial - Métodos de valuación */
-
 /* Valuación multiempresarial - Valuación relativa o Múltiplos*/
-priceSales = valorCap / venDoceM;
-    /* Desarrollar despues los promedios aritmeticos y ponderados */
-priceUtil = valorCap / utilDoceM;
-    /* Desarrollar despues los promedios aritmeticos y ponderados */
+function vPriceSales(precioAccion, numAcciones, venDoceM) {         /* Valuando con Precio a Ventas */
+    valorCap = (precioAccion*numAcciones)
+    priceSales = valorCap / venDoceM;
+    console.group(valorCap, priceSales);
+}
+/* Desarrollar despues los promedios aritmeticos y ponderados */
+
+function vpriceUtil(precioAccion, numAcciones, utilDoceM) {         /* Valuando con Precio a Utilidad */
+    valorCap = (precioAccion*numAcciones)
+    priceUtil = valorCap / utilDoceM;
+    console.log(valorCap, priceUtil);
+}
+/* Desarrollar despues los promedios aritmeticos y ponderados */
 
 /* Valuación multiempresarial - Tasa de descuento*/
-    /* Se aplica la fórmula del WACC, revisar formula */
-    /*  Desarrollar despues la formula de Beta:
-        Beta = COV (%Acción, %Índice) / Var(%Índice); */
+/* Se aplica la fórmula del WACC, desarrollada ya en este archivo */
+/*  Desarrollar despues la formula de Beta:
+    Beta = COV (%Acción, %Índice) / Var(%Índice); */
 
 /* Valuación multiempresarial - Flujos descontados*/
+/* Desarrollar después la formula del Valor Presente */
 
-    /* Desarrollar después la formula del Valor Presente */
-FCFF = ebitda - impuestos - cambCapTrab - CAPEX;
-    /* Desarrollar después la tabla */
-valPerp = fluOper / (wacc - valG);
+function flowfree(ebitda, impuestos, cambCapTrab, CAPEX) {          /* Flujo libre de efectivo a la firma (FCFF) */
+    FCFF = ebitda - impuestos - cambCapTrab - CAPEX;
+    console.log(FCFF);
+}
+/* Desarrollar después la tabla */
+
+function valorPerp (fluOper, wacc, valG) {                          /* Valor Perpetuidad */
+    valPerp = fluOper / (wacc - valG);
+    console.log(valPerp);
+}
     /* Desarrollar después cuadro del EV PV */
     /* Desarrollar cuadro del precio teórico */

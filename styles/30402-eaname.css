@@ -222,3 +222,24 @@ li {
 .email-boletin:hover {
   background-color: blue;
 }
+
+/* Recién creados */
+
+.main-eaname {
+  text-align: justify;
+  width: 90%;
+  margin: 100px auto; /* Checar el tema de los margenes */
+  align-items: center;
+}
+
+.features-comparemp {
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.features-multiplos {
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
