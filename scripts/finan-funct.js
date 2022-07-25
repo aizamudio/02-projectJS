@@ -104,6 +104,14 @@ let FCFF;           /* Flujo libre de efectivo a la firma */
 let valPerp;        /* Valor perpetuidad */
 let valG;           /* Valor de g, valor que representa el crecimiento constante */
 
+/* Funciones predefinidas que podrían ser utiles
+- parsefloat();
+- toFixed();
+- toString();
+*/
+
+/* Definición de funciones del sitio */
+
 /*Estados Financieros - Balance general */
 
 function activoCirc(efectivo, ctasXCob, inventario){    /* Determinación del Activo Circulante o Activo a Corto Plazo */
@@ -377,3 +385,87 @@ function valorPerp (fluOper, wacc, valG) {                          /* Valor Per
 }
     /* Desarrollar después cuadro del EV PV */
     /* Desarrollar cuadro del precio teórico */
+
+/* Definición de arrays */
+
+/* Básicos de Análisis Fundamental - Balance general*/
+/*Incluirlo después */
+
+/* Básicos de Análisis Fundamental - Estado de Resultados*/
+/*Incluirlo después */
+
+/* Analisis Multi Empresarial - Razones Financieras */
+let arrEmpresaCE = [
+    {id:1, renta : 0, manejoAct: 0, apalan: 0, retInv:0},
+    {id:2, renta : 0, manejoAct: 0, apalan: 0, retInv:0},
+    {id:3, renta : 0, manejoAct: 0, apalan: 0, retInv:0}
+];
+let arrResultadosCE = [
+    {id:1, renta : 0, manejoAct: 0, apalan: 0, retInv:0},
+    {id:2, renta : 0, manejoAct: 0, apalan: 0, retInv:0},
+    {id:2, renta : 0, manejoAct: 0, apalan: 0, retInv:0},
+    {id:3, renta : 0, manejoAct: 0, apalan: 0, retInv:0}
+];
+/*
+Donde:
+0 - Rentabilidad
+1 - Manejo de activos
+2 - Apalancamiento
+3 - Retorno sobre inversión
+*/
+
+/* Analisis Multi Empresarial - Múltiplos */
+let arrEmpresaMul = [
+    {id:1, preUti:0, evEB:0, PVL:0},
+    {id:2, preUti:0, evEB:0, PVL:0},
+    {id:3, preUti:0, evEB:0, PVL:0},
+];
+let ResultadosMul = [
+    {id:1, preUti:0, evEB:0, PVL:0},
+    {id:2, preUti:0, evEB:0, PVL:0},
+    {id:3, preUti:0, evEB:0, PVL:0},
+];
+/* 
+Donde:
+0 - Precio Utilidad
+1 - EV/EBITDA
+2 - P/VL
+*/
+
+/* Valuación empresarial - Valuando con Precio a Ventas */
+let arrEmpresaVPV = [
+    {id:1, precio:0, numAct0, marCap:0, venDM:0, priSal:0},
+    {id:2, precio:0, numAct0, marCap:0, venDM:0, priSal:0},
+    {id:3, precio:0, numAct0, marCap:0, venDM:0, priSal:0},
+];
+let arrResultadosVPV = [
+    {id:0, precio:0, numAct0, marCap:0, venDM:0, priSal:0},
+];
+/*
+Donde:
+0 - ID
+1 - Precio
+2 - # Acciones (millones)
+3 - Market Cap (Millones)
+4 - Ventas 12M (millones)
+5 - P/S
+*/
+
+/* Valuación empresarial - Valuando con Precio a Utilidad */
+let arrEmpresaVPU = [
+    {id:1, precio:0, numAct0, marCap:0, utiDM:0, pe:0},
+    {id:2, precio:0, numAct0, marCap:0, utiDM:0, ps:0},
+    {id:3, precio:0, numAct0, marCap:0, utiDM:0, ps:0},
+];
+let arrResultadosVPU = [
+    {id:0, precio:0, numAct0, marCap:0, utiDM:0, pe:0},
+];
+/*
+Donde:
+0 - ID
+1 - Precio
+2 - # Acciones (millones)
+3 - Market Cap (Millones)
+4 - Utilidades 12M (millones)
+5 - P/E
+*/
