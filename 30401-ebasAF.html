@@ -11,8 +11,47 @@
         <title>Bursatech - Ejemplos de interpretación de resultados</title>
         <link rel="stylesheet" type="text/css" href="styles/30401-ebasAF.css" />
         <link rel="stylesheet" type="text/css" href="styles/navbar-footer.css" />
+        <script>
+          function inicializar(){
+            let btnSumaBalGral;
+            btnSumaBalGral= document.getElementById("btnSumarBalGral");
+            btnSumaBalGral.addEventListener("click", btnSumaBGClic);
+
+            let btnSumaEdoRes;
+            btnSumaEdoRes = document.getElementById("btnSumarEdoRes");
+            btnSumaEdoRes.addEventListener("click", btnSumaERClic);
+          }
+            function btnSumaBGClic(){
+              //alert("Hola");
+              let repTotACC = tActCir;
+              document.getElementById("resTotACC").textContent = repTotACC;
+              //let repTotACC = document.getElementById("resTotACC")
+              //let newToACC = document.createTextNode(tActCirc);
+              //repTotACC.appendChild(newToACC);
+
+              let repTotAF = get.getElementById("resTotAF");
+              let repTotAT = get.getElementById("resTotAT");
+              let repTotActivo = get.getElementById("resTotActivo");
+              let repTotPasCP = get.getElementById("resTotPasCP");
+              let repTotPasLP = get.getElementById("resTotPasLP");
+              let repTotPasivo = get.getElementById("resTotPasivo");
+              let repTotCapital = get.getElementById("resTotCapital");
+              let repActivo = get.getElementById("compActivo");
+              let repPasiv = get.getElementById("compPasivo");
+              let repCapital = get.getElementById("compCapital");
+              let repObs = get.getElementById("compObs");
+            }
+            /*function btnSumaERClic() {
+              let =get.getElementById();
+              let =get.getElementById();
+              let =get.getElementById();
+              let =get.getElementById();
+              let =get.getElementById();
+              let =get.getElementById();
+            }*/
+        </script>
     </head>
-    <body>
+    <body onload="inicializar()">
       <section class="fixed-header">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container-fluid">
@@ -136,7 +175,7 @@
         <article><p>Inversiones</p></article>
             <article><p>-</p></article><article><input type="number" id = "capInvers"></article>
         <article><h4>Total Activo Fijo</h4></article>
-            <article><h4>-</h4></article><article><h4 id = resTotAF>-</h4></article>
+            <article><h4>-</h4></article><article><h4 id = "resTotAF">-</h4></article>
         <article><h4>Activos Intangibles</h4></article>
             <article><p></p></article><article><p></p></article>
         <article><p>Marcas</p></article>
@@ -160,7 +199,7 @@
         <article><p>Deuda Bancaria</p></article>
             <article><p>-</p></article><article><input type="number" id = "capDBCP"></article>
         <article><h4>Total Pasivo a Corto Plazo</h4></article>
-            <article><h4>-</h4></article><article><h4 id = "resTotOasCP">-</h4></article>
+            <article><h4>-</h4></article><article><h4 id = "resTotPasCP">-</h4></article>
         <article><h4>Pasivo de Largo Plazo</h4></article>
             <article><p></p></article><article><p></p></article>
         <article><p>Deuda Bancaria</p></article>
@@ -189,10 +228,10 @@
             <article><p>-</p></article><article><p id = "compPasivo">-</p></article>
         <article><p>(+) Capital)</p></article>
             <article><p>-</p></article><article><p id = "compCapital">-</p></article>
-        <article><p></p></article>
-            <article><p></p></article>
+        <article><p>Observaciones</p></article>
+            <article><p id="compObs">-</p></article>
             <a>
-              <button type="submit" class="balGral-boton">
+              <button type="submit" class="balGral-boton" id="btnSumarBalGral">
                 Calcular &rarr;
               </button>
             </a>
@@ -226,7 +265,7 @@
             <article><p>-</p></article>
             <article>
               <a>
-                <button type="submit" class="estRes-boton">
+                <button type="submit" class="estRes-boton" id="btnSumarEdoRes">
                   Calcular &rarr;
                 </button>
               </a>
@@ -280,7 +319,7 @@
                 </div>
             </section>
         </footer>
-        <script></script>
+        <script src="scripts/30401-ebasAF.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

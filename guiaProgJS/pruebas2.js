@@ -110,9 +110,10 @@ let marCapMayPV = mayMarCap(arrMarCapPV);
 let mayorMarCapPV = marCapMayPV;              //console.log(marCapMay);
 
 const empMayCapPV = arrEmpresaVPV.filter (product => {
-    return product.marcCap = marCapMay;
+    return product.marcCap = marCapMayPV;
 })
-console.log(empMayCapPV)
+console.log(marCapMayPV) 
+//No esta funcionando el filtro
 
 
 
